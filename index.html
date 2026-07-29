@@ -126,7 +126,8 @@
 
   <div id="scene8-progress" class="progress"></div>
 
-  <button class="continue-btn" onclick="finishStory()">
+
+  <button id="completeButton" class="continue-btn" type="button">
     Complete the Experience ›
   </button>
 </div>
@@ -170,12 +171,16 @@
 </script>
 
 <script>
-  
-  function finishStory() {
-    window.parent.postMessage({
-        type: "storyFinished"
-    }, "*");
-}
+
+  document.getElementById("completeButton").addEventListener("click", function(event) {
+  event.preventDefault();
+  window.parent.postMessage(
+      {
+          type: "storyFinished"
+      },
+      "*"
+  );
+  });
 
   function goTo(sceneId) {
     document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
