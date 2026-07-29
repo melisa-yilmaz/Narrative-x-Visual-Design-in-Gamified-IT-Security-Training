@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Missed Update</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* 
+    changed:
+    background: #061E29;
+    color: #F3F4F4;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    */
+  body {
+    background:#F3F4F4;
+    color: #061E29;
+    font-family: "Gill Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scene {
+    display: none;
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    animation: fadein 1.2s ease;
+  }
+
+  .scene.active { display: block; }
+
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .scene-number {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #061E29;
+    margin-bottom: 1rem;
+  }
+
+  .scene-image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    background: #061E29;
+    min-height: 380px;
+    object-fit: cover;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    min-height: 380px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1a1520 0%, #2a1f35 50%, #1a2535 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a3a5a;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    border: 1px dashed #3a2a4a;
+  }
+
+  .narration {
+    margin-top: 1.5rem;
+    font-size: 16px;
+    line-height: 1.85;
+    color: #061E29;
+  }
+
+  .narration p { margin-bottom: 0.7rem; }
+
+  .continue-btn {
+    display: block;
+    margin: 2rem auto 0;
+    background: transparent;
+    border: 1px solid #061E29;
+    color: #061E29;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    padding: 12px 36px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .continue-btn:hover {
+    background: #234C6A;
+    color: #061E29;
+  }
+
+  .progress {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1.8rem;
+  }
+
+  .pip {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #061E29;
+    transition: background 0.4s;
+  }
+
+  .pip.done { background: #456882; }
+  .pip.active { background: #1A3D64; }
+
+  /* ============================================================
+     INTERACTIVE DASHBOARD STYLES
+     ============================================================ */
+  .dashboard-container {
+    background: #F3F4F4;
+    border: 1px solid #F3F4F4;
+    border-radius: 8px;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-top: 1.5rem;
+  }
+
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+  }
+
+  .info-card {
+    border-radius: 8px;
+    padding: 0.75rem;
+    background: #F3F4F4;
+    transition: all 0.3s ease;
+  }
+
+  .info-card.secure {
+    border: 1px solid #1B3C53;
+  }
+  .info-card.secure:hover {
+    border-color: #c4b498;
+    box-shadow: 0 0 15px #061E29;
+  }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .secure .card-title { color: #061E29; }
+
+  .info-card ul {
+    list-style-type: none;
+    font-size: 14px;
+    color: #061E29;
+    line-height: 1.6;
+  }
+
+  .info-card li { margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 2px; }
+
+.action-bubbles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.action-bubble {
+  background: #F3F4F4;
+  color: #061E29;
+  padding: 1rem;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 14px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     SCENE 1 — The Academy's Secret Vault
+     ============================================================ -->
+<div class="scene active" id="scene-1">
+
+  <img src="/Users/melisayilmaz/Desktop/TUM/Thesis/Scenes/Software Updates - Real-World x Realistic/Scene1.png" class="scene-image">
+
+  <div class="narration">
+    <p> A university student is working on an important project in the campus library.</p>
+    <p> A notification appears on their laptop: </p> 
+    <p> ⚠️ A software update is available. ⚠️ </p>
+    <p> Since a deadline is approaching, she dismisses the notification and continues working.</p>
+    <p> "It can wait."</p>
+  </div>
+
+  <div class="progress">
+    <div class="pip active"></div>
+    <div class="pip"></div>
+    <div class="pip"></div>
+    <div class="pip"></div>
+    <div class="pip"></div>
+  </div>
+
+  <button class="continue-btn" onclick="goTo('2')">Continue ›</button>
+</div>
+
+
+<!-- ============================================================
+     SCENE 2 — The Chamber of Broken Spellkeys
+     ============================================================ -->
+<div class="scene" id="scene-2">
+  <!-- <div class="scene-number">Scene 2 of 4</div> -->
+
+  <img src="/Users/melisayilmaz/Desktop/TUM/Thesis/Scenes/Software Updates - Real-World x Realistic/Scene2.png" class="scene-image">
+
+  <div class="narration">
+    <p>Several days later, the update still hasn't been installed.</p>
+    <p>Meanwhile, news spreads online about a security flaw affecting the same software.</p>
+    <p>Cybercriminals have started exploiting devices that remain unpatched.</p> 
+    <p>The student remains unaware.</p>
+    <p>Everything still appears to work normally.</p>
+        
+  </div>
+
+  <div class="progress">
+    <div class="pip done"></div>
+    <div class="pip active"></div>
+    <div class="pip"></div>
+    <div class="pip"></div>
+    <div class="pip"></div>
+  </div>
+
+  <button class="continue-btn" onclick="goTo('3')">Continue ›</button>
+</div>
+
+
+
+<!-- ============================================================
+     SCENE 3 — Forging the Unique Spellkey
+     ============================================================ -->
+<div class="scene" id="scene-3">
+  <!-- <div class="scene-number">Scene 3 of 4</div> -->
+
+  <img src="/Users/melisayilmaz/Desktop/TUM/Thesis/Scenes/Software Updates - Real-World x Realistic/Scene4.png" class="scene-image" style="min-height: 250px;">
+
+  <div class="narration">
+   <p> One evening, the student receives suspicious login alerts and unusual account activity notifications. </p>
+   <p> Someone has attempted to access university and cloud accounts connected to the device.</p>
+   <p> The student becomes concerned. </p>
+   <p> While reviewing the situation, they discover that the ignored software update contained an important security patch.</p>
+  </div>
+
+  <div class="progress">
+    <div class="pip done"></div>
+    <div class="pip done"></div>
+    <div class="pip done"></div>
+    <div class="pip active"></div>
+    <div class="pip"></div>
+  </div>
+
+  <button class="continue-btn" onclick="goTo('3-interactive')">Continue ›</button>
+</div>
+
+<!-- ============================================================
+     INTERACTIVE INTERMISSION
+     ============================================================ -->
+    <div class="scene" id="scene-3-interactive">
+    <div class="scene-number">Lesson: The Importance of Software Updates </div>
+  
+    <div class="dashboard-container">
+      <h3> Why Software Updates Matter </h3>
+      <p> Software updates are important for keeping your devices secure, reliable, and working properly. </p>
+      <div class="dashboard-grid">
+        <!-- Secure Criteria Card -->
+        <div class="info-card secure">
+          <div class="card-title">🔒 Security Protection</div>
+            <p> Updates fix security weaknesses that could be used by hackers to access your device or data.</p> 
+        </div>
+  
+        <div class="info-card secure">
+          <div class="card-title">⚙️ Better Performance</div>
+            <p> They improve speed, fix bugs, and help prevent crashes or unexpected errors.</p> 
+        </div>
+  
+        <div class="info-card secure">
+          <div class="card-title">🆕 New Features</div>
+            <p> Updates often add new tools, improvements, and better functionality to your software.</p> 
+        </div>
+  
+        <div class="info-card secure">
+          <div class="card-title">🚨 Bug Fixes</div>
+            <p> Developers regularly fix issues reported by users or found in the system.</p> 
+        </div>
+      </div>
+  
+      <h3 style="margin-top: 2rem;">What You Should Do</h3>
+  
+      <div class="action-bubbles">
+        <div class="action-bubble">🔄 Enable automatic updates if possible</div>
+        <div class="action-bubble">⬇️ Install updates as soon as they are available</div>
+        <div class="action-bubble">🔔 Don't ignore update notifications</div>
+        <div class="action-bubble">💻 Restart your device when required</div>
+      </div>
+    
+      <div class="progress">
+        <div class="pip done"></div>
+        <div class="pip done"></div>
+        <div class="pip active"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+      </div>
+    </div>
+  
+  
+    <button class="continue-btn" onclick="goTo('4')">Continue ›</button>
+  </div>
+
+  
+
+
+<!-- ============================================================
+     SCENE 4 — The Vault Opens
+     ============================================================ -->
+<div class="scene" id="scene-4">
+
+  <img src="/Users/melisayilmaz/Desktop/TUM/Thesis/Scenes/Software Updates - Real-World x Realistic/Scene5.png" class="scene-image" style="min-height: 250px;">
+
+  <div class="narration">
+    <p>The student installs the software update immediately.</p>
+    <p>After restarting the device, security protections are restored.</p>
+    <p>The student updates remaining applications and enables automatic updates.</p>
+    <p>Assignments, personal files, and accounts remain protected.</p>
+    <p>The student has learned that updates are not just new features. They are often security repairs.</p>
+  </div>
+
+  <div class="progress">
+    <div class="pip done"></div>
+    <div class="pip done"></div>
+    <div class="pip done"></div>
+    <div class="pip done"></div>
+    <div class="pip active"></div>
+  </div>
+
+  <button class="continue-btn" onclick="window.location.href='YOUR_SOSCI_SURVEY_URL?c=FANTASY_COMIC'">
+    Complete the Experience ›
+  </button>
+</div>
+
+
+<script>
+  function goTo(sceneId) {
+    document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
+    document.getElementById('scene-' + sceneId).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
