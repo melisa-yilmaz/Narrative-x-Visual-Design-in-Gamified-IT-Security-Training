@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Academy of Arcane Knowledge</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div class="scene active" id="scene-1">
+
+  <img id="scene1-image" class="scene-image">
+  <div id="scene1-text" class="narration"></div>
+
+  <div id="scene1-progress" class="progress"></div>
+  
+  <div class="navigation-buttons">
+    <button class="continue-btn" onclick="goTo('2')">
+        ›
+    </button>
+  </div>
+</div>
+
+
+<div class="scene" id="scene-2">
+  <img id="scene2-image" class="scene-image">
+  <div id="scene2-text" class="narration"></div>
+
+  <div id="scene2-progress" class="progress"></div>
+
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+
+    <button class="continue-btn" onclick="goTo('information')">
+        ›
+    </button>
+  </div>
+</div>
+
+<div class="scene" id="scene-information">
+  <div class="scene-number">Lesson: The Anatomy of a Spellkey</div>
+
+  <div class="dashboard-container">
+    <div class="dashboard-grid">
+
+      <!-- Secure Criteria Card -->
+      <div class="info-card secure">
+        <div class="card-title">🛡️ Strong Protections</div>
+        <ul>
+          <li>✨ <strong>Sufficient Length:</strong> The longer the phrase, the harder it is for shadows to find it.</li>
+          <li>✨ <strong>Unpredictable Components:</strong> Using completely unrelated elements or random shifts confuses creatures.</li>
+          <p> 🔐 Long (at least 12–16 characters)</p> 
+          <p> 🔐 Unique for every account</p>
+        </ul>
+      </div>
+
+      <!-- Vulnerabilities Card -->
+      <div class="info-card vulnerable">
+        <div class="card-title">⚠️ Common Weaknesses</div>
+        <ul>
+          <li>❌ <strong>Simple Sequences:</strong> Patterns like "123456" or sequential characters offer no resistance.</li>
+          <li>❌ <strong>Personal Lore:</strong> Predictable references like birth dates or local names are easily targeted.</li>
+          <p> 🔓 spellkey123</p> 
+          <p> 🔓 academy2026</p>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="information-progress" class="progress"></div>
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+    <button class="continue-btn" onclick="goTo('3')">
+        ›
+    </button>
+  </div>
+</div>
+
+
+
+<div class="scene" id="scene-3">
+  <img id="scene3-image" class="scene-image">
+  <div id="scene3-text" class="narration"></div>
+
+  <div id="scene3-progress" class="progress"></div>
+  
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+
+    <button class="continue-btn" onclick="goTo('4')">
+        ›
+    </button>
+  </div>
+</div>
+
+
+<div class="scene" id="scene-4">
+  <img id="scene4-image" class="scene-image">
+  <div id="scene4-text" class="narration"></div>
+
+  <div id="scene4-progress" class="progress"></div>
+
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+    <button class="continue-btn" onclick="goTo('5')">
+        ›
+    </button>
+  </div>
+
+</div>
+
+<div class="scene" id="scene-5">
+  <img id="scene5-image" class="scene-image">
+  <div id="scene5-text" class="narration"></div>
+
+  <div id="scene5-progress" class="progress"></div>
+
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+
+    <button class="continue-btn" onclick="goTo('6')">
+        ›
+    </button>
+  </div>
+
+</div>
+
+<div class="scene" id="scene-6">
+  <img id="scene6-image" class="scene-image">
+  <div id="scene6-text" class="narration"></div>
+  <div id="scene6-progress" class="progress"></div>
+
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+    <button class="continue-btn" onclick="goTo('7')">
+        ›
+    </button>
+  </div>
+
+</div>
+
+<div class="scene" id="scene-7">
+  <img id="scene7-image" class="scene-image">
+  <div id="scene7-text" class="narration"></div>
+  <div id="scene7-progress" class="progress"></div>
+
+
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
+
+    <button id="completeButton" class="continue-btn" type="button">
+      Complete the Experience ›
+    </button>
+  </div>
+
+</div>
+
+
+
+<script src="../js/data.js"></script>
+
+<script>
+  const story = scenes.find(
+      s => s.topic === "password-security"
+  );
+  const narrativeType = "fantasy";
+  const visualStyle = "realistic";
+
+
+  const scenesData =  story.narratives[narrativeType].data;
+  const totalScenes = scenesData.length;
+
+  scenesData.forEach((scene,index)=>{
+    document.getElementById(
+        `scene${index+1}-image`
+    ).src =
+        scene.visual_style[visualStyle].image;
+
+    document.getElementById(
+        `scene${index+1}-text`
+    ).innerHTML =
+        scene.narration
+        .trim()
+        .split("\n")
+        .map(line => `<p>${line.trim()}</p>`)
+        .join("");
+    const progress = document.getElementById(`scene${index + 1}-progress`);
+
+    for (let i = 0; i < totalScenes; i++) {
+        const pip = document.createElement("div");
+        pip.classList.add("pip");
+
+        if (i < index)
+            pip.classList.add("done");
+        else if (i === index)
+            pip.classList.add("active");
+
+        progress.appendChild(pip);
+    }
+});
+
+  document.getElementById("completeButton").addEventListener("click", function(event) {
+  event.preventDefault();
+  window.parent.postMessage(
+      {
+          type: "storyFinished"
+      },
+      "*"
+  );
+  });
+
+  let sceneHistory = ["1"];
+  function goTo(sceneId) {
+
+      let currentScene = document.querySelector(".scene.active");
+
+      if(currentScene) {
+          let currentId = currentScene.id.replace("scene-", "");
+
+          if(currentId !== sceneId) {
+              sceneHistory.push(sceneId);
+          }
+      }
+
+      document.querySelectorAll('.scene')
+          .forEach(s => s.classList.remove('active'));
+      document.getElementById('scene-' + sceneId)
+          .classList.add('active');
+      window.scrollTo({
+          top:0,
+          behavior:'smooth'
+      });
+  }
+
+  function goBack() {
+      sceneHistory.pop();
+      let previousScene = sceneHistory[sceneHistory.length - 1];
+      if(previousScene) {
+          document.querySelectorAll('.scene')
+              .forEach(s => s.classList.remove('active'));
+
+          document.getElementById('scene-' + previousScene)
+              .classList.add('active');
+
+          window.scrollTo({
+              top:0,
+              behavior:'smooth'
+          });
+      }
+  }
+</script>
+
+</body>
+</html>
