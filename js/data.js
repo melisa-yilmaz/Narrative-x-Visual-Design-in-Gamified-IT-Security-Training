@@ -218,12 +218,10 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene4.png"
                             }
                         },
-                        narration: `Weeks later, Alex receives a security alert. 
-                        A website Alex used years ago has suffered a data breach. 
-                        The stolen information includes usernames and passwords. 
-                        Alex checks the accounts connected to that password. 
-                        Some accounts are already under attack. 
-                        The attackers are trying the stolen password on different websites. 
+                        narration: `Weeks later, Alex is having lunch with one of her colleagues.
+                        He mentions that he recently received a security alert informing him that a website he used years ago had suffered a data breach.
+                        The stolen information included usernames and passwords, and the accounts that shared the same password were already under attack.
+                        The attackers were trying the stolen password on different websites.
                         Alex is shocked.
                         "How can one stolen password affect so many accounts?"
                         `
@@ -239,13 +237,10 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene5.png"
                             }
                         },
-                        narration: `Alex immediately changes every important account to use a different password.
-                        The stolen password only works on the breached website.
-                        Other accounts remain protected.
+                        narration: `After the conversation with his colleague, Alex immediately changes every important account to use a different password.
                         The security team explains:
                         "One account should never hold the key to all your other accounts."
-                        "Every account needs its own unique password."
-                        "
+                        "Every account needs its own unique password."                
                         `
                     },
                     {
@@ -259,11 +254,11 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene6.png"
                             }
                         },
-                        narration: `Months pass. Alex now has dozens of accounts: Work systems. Banking apps. Shopping websites. Personal services.
+                        narration: `After changing all of his passwords and using a unique one for each account, Alex now has dozens of passwords and struggles to remember them.
+                        Work systems. Banking apps. Shopping websites. Personal services.
                         Each account has a different password.
                         Alex looks at the growing list.
                         "How can anyone remember all of these?"
-                        "
                         `
                     },
                     {
