@@ -32,47 +32,6 @@
         ‹
     </button>
 
-    <button class="continue-btn" onclick="goTo('information')">
-        ›
-    </button>
-  </div>
-</div>
-
-<div class="scene" id="scene-information">
-  <div class="scene-number">Lesson: The Anatomy of a Spellkey</div>
-
-  <div class="dashboard-container">
-    <div class="dashboard-grid">
-
-      <!-- Secure Criteria Card -->
-      <div class="info-card secure">
-        <div class="card-title">🛡️ Strong Protections</div>
-        <ul>
-          <li>✨ <strong>Sufficient Length:</strong> The longer the phrase, the harder it is for shadows to find it.</li>
-          <li>✨ <strong>Unpredictable Components:</strong> Using completely unrelated elements or random shifts confuses creatures.</li>
-          <p> 🔐 Long (at least 12–16 characters)</p> 
-          <p> 🔐 Unique for every account</p>
-        </ul>
-      </div>
-
-      <!-- Vulnerabilities Card -->
-      <div class="info-card vulnerable">
-        <div class="card-title">⚠️ Common Weaknesses</div>
-        <ul>
-          <li>❌ <strong>Simple Sequences:</strong> Patterns like "123456" or sequential characters offer no resistance.</li>
-          <li>❌ <strong>Personal Lore:</strong> Predictable references like birth dates or local names are easily targeted.</li>
-          <p> 🔓 spellkey123</p> 
-          <p> 🔓 academy2026</p>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="information-progress" class="progress"></div>
-  <div class="navigation-buttons">
-    <button class="back-btn" onclick="goBack()">
-        ‹
-    </button>
     <button class="continue-btn" onclick="goTo('3')">
         ›
     </button>
@@ -91,11 +50,75 @@
         ‹
     </button>
 
+    <button class="continue-btn" onclick="goTo('information')">
+        ›
+    </button>
+  </div>
+</div>
+
+
+<div class="scene" id="scene-information">
+  <div class="scene-number"></div>
+
+  
+  <div class="wrap">
+    <div class="dashboard-header">
+      <div class="rune-mark">✦</div>
+      <h2>The Art of the Spellkey</h2>
+      <p>The secrets behind strong and secure Spellkeys:</p>
+    </div>
+
+    <div class="dashboard-container">
+      <div class="dashboard-grid">
+  
+        <!-- Common weaknesses -->
+        <article class="info-card vulnerable">
+          <span class="card-eyebrow">Common Weaknesses</span>
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+            Patterns Every Attackers Can Guess
+          </div>
+          <ul>
+            <li>❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.</li>
+            <li>❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.</li>
+            <li>❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns.</li>
+          </ul>
+          <div class="card-example ward-bad">🔓 academy2026</div>
+        </article>
+  
+        <!-- Strong protections -->
+        <article class="info-card secure">
+          <span class="card-eyebrow">Strong Protections</span>
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            What Makes a Spellkey Strong
+          </div>
+          <ul>
+            <li>✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess.</li>
+            <li>✨ <strong>Make it unpredictable:</strong> Use unrelated words or ideas that attackers would not easily expect.</li>
+            <li>✨ <strong>No personal information:</strong> Do not build passwords from information that someone could discover about you..</li>
+          </ul>
+          <div class="card-example ward-good">🔐 phoenix-waterfall-compass-fox</div>
+        </article>
+
+      </div>
+
+    <div class="card-example ward-arcane">
+        <strong>In the story:</strong> Shadow Mimics represent attackers who try predictable passwords. A Spellkey represents a password. A unique Spellkey protects one account.
+      </div>
+  <div id="information-progress" class="progress"></div>
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
     <button class="continue-btn" onclick="goTo('4')">
         ›
     </button>
   </div>
 </div>
+</div>
+</div>
+
 
 
 <div class="scene" id="scene-4">
@@ -128,8 +151,8 @@
         ›
     </button>
   </div>
-
 </div>
+
 
 <div class="scene" id="scene-6">
   <div id="scene6-text" class="narration"></div>
@@ -139,9 +162,74 @@
     <button class="back-btn" onclick="goBack()">
         ‹
     </button>
-    <button class="continue-btn" onclick="goTo('7')">
+    <button class="continue-btn" onclick="goTo('information2')">
       ›
   </button>
+  </div>
+</div>
+
+<div class="scene" id="scene-information2">
+  <div class="scene-number"></div>
+
+  <div class="wrap">
+    <div class="dashboard-header">
+      <div class="rune-mark">✦</div>
+      <h2>The Spellkey Keeper's Guide</h2>
+      <p>What the apprentice learned about password reuse and the Book of Infinite Keys.</p>
+    </div>
+
+    <div class="dashboard-container">
+      <div class="dashboard-grid">
+        <!-- The hidden risk -->
+        <article class="info-card reuse">
+          <span class="card-eyebrow">The Danger of Reuse</span>
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3"/><path d="M12 11v6M9 15l3 2 3-2"/><path d="M5 20l14-14" stroke-dasharray="2 2"/></svg>
+            One Spellkey, Many Vaults
+          </div>
+          <ul>
+            <li>⚠️ <strong>Never reuse important passwords:</strong>  Using the same password for several accounts means one stolen password could put multiple accounts at risk..</li>
+            <li>⚠️ <strong>One breach can spread the risk:</strong> A password's strength doesn't matter if attackers obtain your password from one account, they may try it on your other accounts..</li>
+            <li>✅ <strong>How to fix it?:</strong> A different password for every account keeps a single breach contained to that one account.</li>
+          </ul>
+          <div class="card-example ward-warn">🗝️ 🔓 Same Spellkey → 📧 Email · ☁️ Cloud · 🏦 Banking </div>
+        </article>
+
+        <!-- The practical solution -->
+        <article class="info-card keeper">
+          <span class="card-eyebrow">A Guardian's Solution</span>
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16z"/><path d="M20 3v16"/></svg>
+            The Book of Infinite Keys: Don't Have to Remember Them All
+          </div>
+          <ul>
+            <li>🔑 <strong>Generate unique passwords:</strong>  A password manager can create strong, random passwords for your accounts.</li>
+            <li>🔑 <strong>Store them securely:</strong> You do not need to remember every password yourself.</li>
+            <li>🔑 <strong>Remember one master password:</strong> Only need to remember the password that protects your password manager.</li>
+          </ul>
+          <div class="card-example ward-good">
+            🔐 One Master Password → 🔑 Many Unique Passwords
+          </div>
+        </article>
+
+      </div>
+
+      <div class="card-example ward-arcane">
+        <strong>In the story:</strong>   The Spellkey represents a password, while each magical vault represents a different account. The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password.
+      </div>
+
+
+
+      </div>
+
+      <div id="information-2-progress" class="progress"></div>
+      <div class="navigation-buttons">
+        <button class="back-btn" onclick="goBack()">‹</button>
+        <button class="continue-btn" onclick="goTo('7')">
+          ›
+      </button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -155,13 +243,13 @@
         ‹
     </button>
 
-    <button class="continue-btn" onclick="goTo('information2')">
+    <button class="continue-btn" onclick="goTo('information3')">
       ›
    </button>
   </div>
 </div>
 
-<div class="scene" id="scene-information2">
+<div class="scene" id="scene-information3">
 
   <div class="scene-number">
     The Academy Decoded: Real-World Meaning
