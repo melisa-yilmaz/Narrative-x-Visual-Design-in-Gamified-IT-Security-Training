@@ -35,52 +35,12 @@
         ‹
     </button>
 
-    <button class="continue-btn" onclick="goTo('information')">
-        ›
-    </button>
-  </div>
-</div>
-
-<div class="scene" id="scene-information">
-  <div class="scene-number">Lesson: The Anatomy of a Spellkey</div>
-
-  <div class="dashboard-container">
-    <div class="dashboard-grid">
-
-      <!-- Secure Criteria Card -->
-      <div class="info-card secure">
-        <div class="card-title">🛡️ Strong Protections</div>
-        <ul>
-          <li>✨ <strong>Sufficient Length:</strong> The longer the phrase, the harder it is for shadows to find it.</li>
-          <li>✨ <strong>Unpredictable Components:</strong> Using completely unrelated elements or random shifts confuses creatures.</li>
-          <p> 🔐 Long (at least 12–16 characters)</p> 
-          <p> 🔐 Unique for every account</p>
-        </ul>
-      </div>
-
-      <!-- Vulnerabilities Card -->
-      <div class="info-card vulnerable">
-        <div class="card-title">⚠️ Common Weaknesses</div>
-        <ul>
-          <li>❌ <strong>Simple Sequences:</strong> Patterns like "123456" or sequential characters offer no resistance.</li>
-          <li>❌ <strong>Personal Lore:</strong> Predictable references like birth dates or local names are easily targeted.</li>
-          <p> 🔓 spellkey123</p> 
-          <p> 🔓 academy2026</p>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="information-progress" class="progress"></div>
-  <div class="navigation-buttons">
-    <button class="back-btn" onclick="goBack()">
-        ‹
-    </button>
     <button class="continue-btn" onclick="goTo('3')">
         ›
     </button>
   </div>
 </div>
+
 
 
 
@@ -95,6 +55,19 @@
         ‹
     </button>
 
+    <button class="continue-btn" onclick="goTo('information')">
+        ›
+    </button>
+  </div>
+</div>
+
+<div class="scene" id="scene-information">
+
+  <div id="information-panel-1-content"></div>
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
     <button class="continue-btn" onclick="goTo('4')">
         ›
     </button>
@@ -170,104 +143,15 @@
 </div>
 
 <div class="scene" id="scene-information2">
+  <div id="information-panel-2-content"></div>
+      <div class="navigation-buttons">
+        <button class="back-btn" onclick="goBack()">‹</button>
+        <button id="completeButton" class="continue-btn" type="button">
+          Complete the Experience ›
+        </button>
+      </div>
+ </div>
 
-  <div class="scene-number">
-    The Academy Decoded: Real-World Meaning
-  </div>
-
-
-  <div class="narration explanation-text">
-
-    <h2>The Real-World Meaning Behind The Academy of Arcane Knowledge</h2>
-    <p>
-      The journey through the Academy was more than a magical adventure.
-      Each element represents an important concept in digital security.
-    </p>
-
-
-    <h3>🗝️ Spellkey → Password</h3>
-
-    <p>
-      A Spellkey protects a magical vault, just like a password protects an online account.
-      A strong password should be unique, unpredictable, and difficult for others to guess.
-    </p>
-
-
-    <h3>🏰 Magical Vault → Digital Account</h3>
-
-    <p>
-      Each vault represents a digital account, such as email, banking,
-      cloud storage, shopping accounts, or work systems.
-      Every account contains valuable information that needs protection.
-    </p>
-
-
-    <h3>👤 Dark Mimics → Hackers and Cybercriminals</h3>
-
-    <p>
-      The Mimics represent attackers who search for weak passwords,
-      stolen credentials, and predictable patterns.
-    </p>
-
-
-    <h3>🔓 Broken Magical Locks → Weak Passwords</h3>
-
-    <p>
-      Broken locks represent passwords that are easy to guess,
-      such as names, birthdays, or common words.
-    </p>
-
-
-    <h3>🗝️ Stolen Spellkeys → Stolen Passwords</h3>
-
-    <p>
-      When Mimics steal Spellkeys, it represents a data breach where attackers
-      obtain usernames and passwords from a compromised website.
-    </p>
-
-
-    <h3>🔁 One Spellkey for Many Vaults → Password Reuse</h3>
-
-    <p>
-      Using one Spellkey for many vaults represents reusing the same password
-      across multiple accounts.
-      If one password is exposed, many accounts become vulnerable.
-    </p>
-
-
-    <h3>📖 Book of Infinite Keys → Password Manager</h3>
-
-    <p>
-      The magical book represents a password manager.
-      It securely stores unique passwords and helps create strong random passwords.
-    </p>
-
-
-    <h3>✨ Master Spell → Master Password</h3>
-
-    <p>
-      The Master Spell represents the single strong password used to access a password manager.
-      Protecting this password is essential because it protects all other passwords.
-    </p>
-
-
-  </div>
-
-
-  <div class="navigation-buttons">
-
-    <button class="back-btn" onclick="goBack()">
-      ‹
-    </button>
-
-
-    <button id="completeButton" class="continue-btn" type="button">
-      Complete the Experience ›
-    </button>
-
-  </div>
-
-</div>
 
 
     
@@ -277,6 +161,7 @@
 
 
 <script src="../js/data.js"></script>
+<script src="../js/information-panel.js"></script>
 
 <script>
   const story = scenes.find(
@@ -348,6 +233,16 @@
           .forEach(s => s.classList.remove('active'));
       document.getElementById('scene-' + sceneId)
           .classList.add('active');
+
+      
+    if (sceneId === "information") {
+        renderInformationPanel(1, narrativeType);
+    }
+    if (sceneId === "information2") {
+        renderInformationPanel(2, narrativeType);
+    }
+
+    
       window.scrollTo({
           top:0,
           behavior:'smooth'

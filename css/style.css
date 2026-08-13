@@ -27,7 +27,7 @@
     padding:3rem 1.25rem;
   }
 
-.wrap{width:100%;max-width:840px;}
+  .wrap{width:100%;max-width:840px;}
 
 body.fantasy {
     background: #0a0a0f;
@@ -291,7 +291,7 @@ body.real {
   .ward-good{background:var(--ward-good-glow); color:#a7e0bd;}
   .ward-bad{background:var(--ward-bad-glow); color:#e3a58c; text-decoration:line-through; text-decoration-color:rgba(201,112,79,0.5);}
   .ward-warn{background:var(--ward-warn-glow); color:#f0d19c;}
-  .ward-arcane{background:var(--ward-arcane-glow); color:#c9bdf0;}
+  .ward-arcane{background:rgba(21, 17, 30, 0.6); color:#c9bdf0;}
 
 
 

@@ -40,46 +40,7 @@
   </div>
 </div>
 
-<div class="scene" id="scene-information">
-  <div class="scene-number">Lesson: The Anatomy of a Spellkey</div>
 
-  <div class="dashboard-container">
-    <div class="dashboard-grid">
-
-      <!-- Secure Criteria Card -->
-      <div class="info-card secure">
-        <div class="card-title">🛡️ Strong Protections</div>
-        <ul>
-          <li>✨ <strong>Sufficient Length:</strong> The longer the phrase, the harder it is for shadows to find it.</li>
-          <li>✨ <strong>Unpredictable Components:</strong> Using completely unrelated elements or random shifts confuses creatures.</li>
-          <p> 🔐 Long (at least 12–16 characters)</p> 
-          <p> 🔐 Unique for every account</p>
-        </ul>
-      </div>
-
-      <!-- Vulnerabilities Card -->
-      <div class="info-card vulnerable">
-        <div class="card-title">⚠️ Common Weaknesses</div>
-        <ul>
-          <li>❌ <strong>Simple Sequences:</strong> Patterns like "123456" or sequential characters offer no resistance.</li>
-          <li>❌ <strong>Personal Lore:</strong> Predictable references like birth dates or local names are easily targeted.</li>
-          <p> 🔓 spellkey123</p> 
-          <p> 🔓 academy2026</p>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="information-progress" class="progress"></div>
-  <div class="navigation-buttons">
-    <button class="back-btn" onclick="goBack()">
-        ‹
-    </button>
-    <button class="continue-btn" onclick="goTo('3')">
-        ›
-    </button>
-  </div>
-</div>
 
 
 
@@ -94,6 +55,20 @@
         ‹
     </button>
 
+    <button class="continue-btn" onclick="goTo('information')">
+        ›
+    </button>
+  </div>
+</div>
+
+<div class="scene" id="scene-information">
+  <div class="scene-number"></div>
+
+  <div id="information-panel-1-content"></div>
+  <div class="navigation-buttons">
+    <button class="back-btn" onclick="goBack()">
+        ‹
+    </button>
     <button class="continue-btn" onclick="goTo('4')">
         ›
     </button>
@@ -163,16 +138,28 @@
         ‹
     </button>
 
-    <button id="completeButton" class="continue-btn" type="button">
-      Complete the Experience ›
-    </button>
+    <button class="continue-btn" onclick="goTo('information2')">
+      ›
+  </button>
   </div>
 
+</div>
+
+<div class="scene" id="scene-information2">
+
+  <div id="information-panel-2-content"></div>
+     <div class="navigation-buttons">
+        <button class="back-btn" onclick="goBack()">‹</button>
+        <button id="completeButton" class="continue-btn" type="button">
+          Complete the Experience ›
+        </button>
+  </div>
 </div>
 
 
 
 <script src="../js/data.js"></script>
+<script src="../js/information-panel.js"></script>
 
 <script>
   const story = scenes.find(
@@ -241,6 +228,15 @@
           .forEach(s => s.classList.remove('active'));
       document.getElementById('scene-' + sceneId)
           .classList.add('active');
+
+      if (sceneId === "information") {
+        renderInformationPanel(1, narrativeType);
+      }
+
+      if (sceneId === "information2") {
+        renderInformationPanel(2, narrativeType);
+     }
+
       window.scrollTo({
           top:0,
           behavior:'smooth'
