@@ -15,7 +15,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene1.png"
                             }
                         },
-                        narration: `A young apprentice, Alex, arrives at the prestigious Academy of Arcane Knowledge.
+                        narration_EN: `A young apprentice, Alex, arrives at the prestigious Academy of Arcane Knowledge.
                         Inside the Hall of Secrets stands an ancient vault containing powerful magical artifacts and knowledge.
                         Professor Aurelia, Keeper of Secrets, welcomes the apprentice, Alex, and explains that every student must create a magical Spellkey to protect their personal vault.
                         However, she warns that many students choose weak Spellkeys.
@@ -38,7 +38,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene2.png"
                             }
                         },
-                        narration: `Professor Aurelia leads Alex beneath the castle.
+                        narration_EN: `Professor Aurelia leads Alex beneath the castle.
                         There they discover a chamber filled with broken magical locks and abandoned Spellkeys.
                         Dark Mimic creatures crawl among them.
                         The creatures easily open locks connected to simple and predictable Spellkeys.
@@ -60,7 +60,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene3.png"
                             }
                         },
-                        narration: `The professor takes Alex to the Library of Unusual Things.
+                        narration_EN: `The professor takes Alex to the Library of Unusual Things.
                         She explains that strong Spellkeys are built from unexpected combinations.
                         The apprentice chooses four unrelated magical elements:
                         A phoenix feather, A moonlit waterfall, A silver compass, A midnight fox
@@ -83,7 +83,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene4.png"
                             }
                         },
-                        narration: `At midnight, the apprentice presents the newly forged Spellkey before the vault.
+                        narration_EN: `At midnight, the apprentice presents the newly forged Spellkey before the vault.
                         The Mimics emerge and attempt to imitate common Spellkeys.
                         But they cannot understand the unique combination.
                         Their shadows dissolve. The vault's runes awaken.
@@ -111,7 +111,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene5.png"
                             }
                         },
-                        narration: `Professor Aurelia closes the vault with a smile.
+                        narration_EN: `Professor Aurelia closes the vault with a smile.
                         "You have forged a remarkable Spellkey," she says.
                         "But there is one more lesson every guardian must learn."
                         She leads Alex to the Hall of Echoes, where countless magical vaults shimmer throughout the kingdom.
@@ -153,7 +153,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene6.png"
                             }
                         },
-                        narration: `"Exactly," says Professor Aurelia.
+                        narration_EN: `"Exactly," says Professor Aurelia.
                         "Even the strongest Spellkey becomes dangerous when it is reused."
                         Alex returns to the Hall of Secrets and forges a different Spellkey for every important vault.
                         When the Shadow Mimics return, they try the stolen Spellkey again.
@@ -176,7 +176,7 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene7.png"
                             }
                         },
-                        narration: `Days pass, and Alex now protects dozens of magical vaults across the kingdom.
+                        narration_EN: `Days pass, and Alex now protects dozens of magical vaults across the kingdom.
                         Alex looks at the countless Spellkeys they have created.
                         "Professor, how can I remember every Spellkey?"
                         Professor Aurelia leads Alex to an ancient chamber beneath the academy.

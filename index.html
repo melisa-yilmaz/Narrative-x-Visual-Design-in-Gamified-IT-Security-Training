@@ -44,26 +44,128 @@ body{
 </style>
 
 </head>
-
 <body>
 
     <div class="menu">
-
         <h1 id="welcomeText">Welcome!</h1>
-    
+    </div>
+
+
+    <script>
+
+        // =====================================
+        // GET PARAMETERS FROM SOSCI
+        // =====================================
+
+        const params = new URLSearchParams(window.location.search);
+
+        const language =
+            params.get("lang") || "en";
+
+        const condition =
+            params.get("condition") || "1";
+
+
+        console.log("Language:", language);
+        console.log("Condition:", condition);
+
+
+        // =====================================
+        // LANGUAGE
+        // =====================================
+
+        if (language === "ger") {
+
+            document.getElementById("welcomeText")
+                .textContent = "Willkommen!";
+
+        } else {
+
+            document.getElementById("welcomeText")
+                .textContent = "Welcome!";
+
+        }
+
+
+        // =====================================
+        // CONDITIONS
+        // =====================================
+
+        const scenes = {
+
+            "1": "scenes/fantasy-narrative.html",
+
+            "2": "scenes/real-narrative.html",
+
+            "3": "scenes/fantasy-comic.html",
+
+            "4": "scenes/fantasy-realistic.html",
+
+            "5": "scenes/real-comic.html",
+
+            "6": "scenes/real-realistic.html"
+
+        };
+
+
+        // =====================================
+        // SELECT CONDITION
+        // =====================================
+
+        const selectedScene =
+            scenes[condition];
+
+
+        console.log(
+            "Selected scene:",
+            selectedScene
+        );
+
+
+        // =====================================
+        // OPEN SELECTED HTML
+        // =====================================
+
+        if (selectedScene) {
+
+            window.location.href =
+                selectedScene +
+                "?lang=" +
+                encodeURIComponent(language);
+
+        } else {
+
+            console.error(
+                "Invalid condition:",
+                condition
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
+
+<!-- 
+<body>
+
+    <div class="menu">
+        <h1 id="welcomeText">Welcome!</h1>
     </div>
     
     <script>
-    const lang = new URLSearchParams(window.location.search).get("lang") || "eng";
-    
-    console.log("Selected language:", lang);
-    
-    if (lang === "ger") {
-        document.getElementById("welcomeText").textContent = "Willkommen!";
-    } else {
-        document.getElementById("welcomeText").textContent = "Welcome!";
-    }
+        const lang = new URLSearchParams(window.location.search).get("lang") || "en";
+        
+        console.log("Selected language:", lang);
+        
+        if (lang === "ger") {
+            document.getElementById("welcomeText").textContent = "Willkommen!";
+        } else {
+            document.getElementById("welcomeText").textContent = "Welcome!";
+        }
 
     </script>
 </body>
-</html>
+
+-->
