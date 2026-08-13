@@ -56,11 +56,45 @@ body{
             console.log("Language:", lang);
             console.log("Condition:", condition);
 
-        function openScene(scene) {
+        const scenes = {
+        "1": "scenes/fantasy-narrative.html",
+        "2": "scenes/real-narrative.html",
+        "3": "scenes/fantasy-comic.html",
+        "4": "scenes/fantasy-realistic.html",
+        "5": "scenes/real-comic.html",
+        "6": "scenes/real-realistic.html"
+        };
+
+
+        // --------------------------------
+        // Find selected scene
+        // --------------------------------
+
+        const selectedScene = scenes[condition];
+
+        console.log("Selected scene:", selectedScene);
+
+        if (selectedScene) {
+
             window.location.href =
-                scene + "?lang=" + encodeURIComponent(lang);
+                selectedScene +
+                "?lang=" + encodeURIComponent(lang);
+
+            } else {
+
+            console.error("Invalid or missing condition:", condition);
+
+            document.body.innerHTML = `
+                <p style="
+                    color:white;
+                    text-align:center;
+                    font-family:Georgia, serif;
+                ">
+                    Error: No valid experiment condition was provided.
+                </p>
+            `;
         }
-    
+        
     </script>
     
 <div class="menu">
