@@ -217,12 +217,17 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene1.png"
                             }
                         },
-                        narration: `A young professional named Alex starts a new job at a growing technology company.
+                        narration_EN: `A young professional named Alex starts a new job at a growing technology company.
                         On the first day, Alex receives access to important digital accounts:
                         email, work systems, cloud storage, and personal services.
                         The security team explains that every account needs a strong password to protect valuable information.
                         However, they warn that many people still choose simple passwords.
-                        And attackers have learned how to exploit them.
+                        And attackers have learned how to exploit them.`,
+                        narration_GER:`Ein junger Berufstätiger namens Alex beginnt eine neue Stelle bei einem wachsenden Technologieunternehmen.
+                        An seinem ersten Arbeitstag erhält Alex Zugriff auf wichtige digitale Konten: E-Mail, Arbeitssysteme, Cloud-Speicher und persönliche Dienste.
+                        Das Sicherheitsteam erklärt, dass jedes Konto ein starkes Passwort benötigt, um wertvolle Informationen zu schützen.
+                        Es warnt jedoch davor, dass viele Menschen noch immer einfache Passwörter wählen.
+                        Und Angreifer haben gelernt, diese Schwächen auszunutzen.
                         `
                     },
                     {
@@ -236,13 +241,20 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene2.png"
                             }
                         },
-                        narration: `During a security training session, Alex views a report on common password attacks.
+                        narration_EN: `During a security training session, Alex views a report on common password attacks.
                         Cybercriminals use stolen password lists and automated tools to test simple combinations.
                         Passwords like birthdays, names, and common phrases are quickly guessed.
                         The security trainer explains:
                         "Attackers do not need to break every account manually."
-                        "They search for predictable patterns that people commonly use."
-                        .`
+                        "They search for predictable patterns that people commonly use.".`,
+                        narration_GER: `Während einer Sicherheitsschulung sieht sich Alex einen Bericht über häufige Passwortangriffe an.
+                        Cyberkriminelle verwenden gestohlene Passwortlisten und automatisierte Tools, um einfache Kombinationen auszuprobieren.
+                        Passwörter wie Geburtstage, Namen und häufig verwendete Redewendungen werden schnell erraten.
+                        Der Sicherheitstrainer erklärt:
+                        „Angreifer müssen nicht jedes Konto einzeln von Hand knacken.“
+                        „Sie suchen nach vorhersehbaren Mustern, die viele Menschen verwenden.“
+                        `
+
                     },
                     {
                         scene_id: 3,
@@ -255,12 +267,19 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene3.png"
                             }
                         },
-                        narration: `The security team teaches Alex how to create stronger passwords.
+                        narration_EN: `The security team teaches Alex how to create stronger passwords.
                         Instead of using familiar words or simple patterns, Alex creates a long and unpredictable password using a random combination of characters.
                         A mix of letters, numbers, and symbols creates a password that attackers cannot easily guess.
                         Alex learns:
                         A strong password is not about being complicated to remember.
                         It is about being difficult for others to predict.
+                        `,
+                        narration_GER:`Das Sicherheitsteam zeigt Alex, wie man stärkere Passwörter erstellt.
+                        Anstatt vertraute Wörter oder einfache Muster zu verwenden, erstellt Alex ein langes und unvorhersehbares Passwort aus einer zufälligen Zeichenkombination.
+                        Eine Mischung aus Buchstaben, Zahlen und Sonderzeichen ergibt ein Passwort, das Angreifer nicht leicht erraten können.
+                        Alex lernt:
+                        Ein starkes Passwort muss nicht kompliziert zu merken sein.
+                        Es muss für andere schwer vorherzusagen sein.
                         `
                     },
                     {
@@ -274,12 +293,18 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene4.png"
                             }
                         },
-                        narration: `Weeks later, Alex is having lunch with one of her colleagues.
+                        narration_EN: `Weeks later, Alex is having lunch with one of his colleagues.
                         He mentions that he recently received a security alert informing him that a website he used years ago had suffered a data breach.
                         The stolen information included usernames and passwords, and the accounts that shared the same password were already under attack.
                         The attackers were trying the stolen password on different websites.
                         Alex is shocked.
-                        "How can one stolen password affect so many accounts?"
+                        "How can one stolen password affect so many accounts?"`,
+                        narration_GER: `Einige Wochen später isst Alex mit einem seiner Kollegen zu Mittag.
+                        Der Kollege erzählt, dass er vor Kurzem eine Sicherheitswarnung erhalten hat. Darin wurde er darüber informiert, dass eine Website, die er vor Jahren genutzt hatte, von einem Datenleck betroffen war.
+                        Zu den gestohlenen Daten gehörten Benutzernamen und Passwörter. Konten, bei denen dasselbe Passwort verwendet wurde, wurden bereits angegriffen.
+                        Die Angreifer versuchten, das gestohlene Passwort auch auf anderen Websites zu verwenden.
+                        Alex ist schockiert.
+                        „Wie kann ein einziges gestohlenes Passwort so viele Konten gefährden?“
                         `
                     },
                     {
@@ -293,10 +318,15 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene5.png"
                             }
                         },
-                        narration: `After the conversation with his colleague, Alex immediately changes every important account to use a different password.
+                        narration_EN: `After the conversation with his colleague, Alex immediately changes every important account to use a different password.
                         The security team explains:
                         "One account should never hold the key to all your other accounts."
                         "Every account needs its own unique password."                
+                        `,
+                        narration_GER:`Nach dem Gespräch mit dem Kollegen ändert Alex sofort die Passwörter aller wichtigen Konten, sodass jedes Konto ein anderes Passwort verwendet.
+                        Das Sicherheitsteam erklärt:
+                        „Kein einzelnes Konto sollte jemals der Schlüssel zu allen anderen Konten sein.“
+                        „Jedes Konto braucht ein eigenes, einzigartiges Passwort.“
                         `
                     },
                     {
@@ -310,11 +340,17 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene6.png"
                             }
                         },
-                        narration: `After changing all of his passwords and using a unique one for each account, Alex now has dozens of passwords and struggles to remember them.
+                        narration_EN: `After changing all of his passwords and using a unique one for each account, Alex now has dozens of passwords and struggles to remember them.
                         Work systems. Banking apps. Shopping websites. Personal services.
                         Each account has a different password.
                         Alex looks at the growing list.
                         "How can anyone remember all of these?"
+                        `,
+                        narration_GER:`Nachdem Alex alle Passwörter geändert und für jedes Konto ein eigenes Passwort eingerichtet hat, muss Alex sich nun Dutzende Passwörter merken und hat Schwierigkeiten, den Überblick zu behalten.
+                        Arbeitssysteme. Banking-Apps. Onlineshops. Persönliche Dienste.
+                        Jedes Konto hat ein anderes Passwort.
+                        Alex betrachtet die immer länger werdende Liste.
+                        „Wie soll man sich das alles merken?“
                         `
                     },
                     {
@@ -328,13 +364,22 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene7.png"
                             }
                         },
-                        narration: `The security team introduces Alex to a password manager.
+                        narration_EN: `The security team introduces Alex to a password manager.
                         The tool securely stores unique passwords for every account.
                         It can also generate long, random passwords whenever a new account is created.
                         Alex only needs to remember one strong master password.No repeated passwords.No predictable patterns. No forgotten credentials. The security team smiles. 
                         "Good security does not mean remembering every password."
-                        "It means using the right tools to protect them."
-                        "
+                        "It means using the right tools to protect them."`,
+                        narration_GER: `Das Sicherheitsteam stellt Alex einen Passwortmanager vor.
+                        Das Tool speichert für jedes Konto ein eigenes Passwort sicher ab.
+                        Es kann außerdem lange, zufällige Passwörter erstellen, sobald ein neues Konto angelegt wird.
+                        Alex muss sich nur ein einziges starkes Masterpasswort merken.
+                        Keine mehrfach verwendeten Passwörter.
+                        Keine vorhersehbaren Muster.
+                        Keine vergessenen Zugangsdaten.
+                        Das Sicherheitsteam lächelt.
+                        „Gute Sicherheit bedeutet nicht, sich jedes einzelne Passwort merken zu müssen.“
+                        „Sie bedeutet, die richtigen Werkzeuge zu nutzen, um Passwörter zu schützen.“
                         `
                     },
                 ]

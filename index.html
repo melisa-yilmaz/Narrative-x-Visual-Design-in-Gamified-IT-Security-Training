@@ -48,20 +48,14 @@ body{
 <body>
 
     <script>
-
-        // Get language from SoSci URL
         const lang =
             new URLSearchParams(window.location.search).get("lang") || "en";
     
         console.log("Selected language:", lang);
     
-    
-        // Open scene and pass language along
         function openScene(scene) {
-    
             window.location.href =
                 scene + "?lang=" + encodeURIComponent(lang);
-    
         }
     
     </script>
@@ -73,19 +67,23 @@ body{
         Fantasy Narrative
     </button>
 
+    <button onclick="openScene('scenes/real-narrative.html')">
+        Real Narrative
+    </button>
+
     <button onclick="openScene('scenes/fantasy-comic.html')">
       Fantasy + Comic
   </button>
 
-  <button onclick="openScene('scenes/fantasy-realistic.html')">
+   <button onclick="openScene('scenes/fantasy-realistic.html')">
         Fantasy + Realistic
     </button>
 
-    <button onclick="location.href='scenes/real-comic.html'">
+    <button onclick="openScene('scenes/real-comic.html')">
         Real-world + Comic
     </button>
 
-    <button onclick="location.href='scenes/real-realistic.html'">
+    <button onclick="openScene('scenes/real-realistic.html')">
         Real-world + Realistic
     </button>
 
