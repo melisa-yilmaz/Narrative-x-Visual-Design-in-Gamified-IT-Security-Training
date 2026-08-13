@@ -318,10 +318,11 @@ const scenes = [
                                 image: "../images/real-realistic/password-security/Scene5.png"
                             }
                         },
-                        narration_EN: `After the conversation with his colleague, Alex immediately changes every important account to use a different password.
+                        narration_EN: `After the conversation with his colleague, Alex immediately changed every important account to use a different password.
                         The security team explains:
                         "One account should never hold the key to all your other accounts."
-                        "Every account needs its own unique password."                
+                        "Every account needs its own unique password."
+                        "                
                         `,
                         narration_GER:`Nach dem Gespräch mit dem Kollegen ändert Alex sofort die Passwörter aller wichtigen Konten, sodass jedes Konto ein anderes Passwort verwendet.
                         Das Sicherheitsteam erklärt:
@@ -345,7 +346,8 @@ const scenes = [
                         Each account has a different password.
                         Alex looks at the growing list.
                         "How can anyone remember all of these?"
-                        `,
+                        "
+                                                `,
                         narration_GER:`Nachdem Alex alle Passwörter geändert und für jedes Konto ein eigenes Passwort eingerichtet hat, muss Alex sich nun Dutzende Passwörter merken und hat Schwierigkeiten, den Überblick zu behalten.
                         Arbeitssysteme. Banking-Apps. Onlineshops. Persönliche Dienste.
                         Jedes Konto hat ein anderes Passwort.
@@ -367,9 +369,10 @@ const scenes = [
                         narration_EN: `The security team introduces Alex to a password manager.
                         The tool securely stores unique passwords for every account.
                         It can also generate long, random passwords whenever a new account is created.
-                        Alex only needs to remember one strong master password.No repeated passwords.No predictable patterns. No forgotten credentials. The security team smiles. 
+                        Alex only needs to remember one strong master password. No repeated passwords. No predictable patterns. No forgotten credentials. The security team smiles. 
                         "Good security does not mean remembering every password."
-                        "It means using the right tools to protect them."`,
+                        "It means using the right tools to protect them."
+                        `,
                         narration_GER: `Das Sicherheitsteam stellt Alex einen Passwortmanager vor.
                         Das Tool speichert für jedes Konto ein eigenes Passwort sicher ab.
                         Es kann außerdem lange, zufällige Passwörter erstellen, sobald ein neues Konto angelegt wird.

@@ -48,11 +48,14 @@ body{
 <body>
 
     <script>
-        const lang =
-            new URLSearchParams(window.location.search).get("lang") || "en";
-    
-        console.log("Selected language:", lang);
-    
+        const params = new URLSearchParams(window.location.search);
+
+        const lang = params.get("lang") || "eng";
+        const condition = params.get("condition");
+
+            console.log("Language:", lang);
+            console.log("Condition:", condition);
+
         function openScene(scene) {
             window.location.href =
                 scene + "?lang=" + encodeURIComponent(lang);

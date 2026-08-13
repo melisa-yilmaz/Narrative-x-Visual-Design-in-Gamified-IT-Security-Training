@@ -172,9 +172,9 @@
   const scenesData =  story.narratives[narrativeType].data;
   const totalScenes = scenesData.length;
 
-  const lang = new URLSearchParams(window.location.search).get("lang") || "en";
+  const lang = new URLSearchParams(window.location.search).get("lang") || "eng";
   console.log("Language:", lang);
-  const narrationVar = lang === "en" ? "narration_EN" : "narration_GER";
+  const narrationVar = lang === "eng" ? "narration_EN" : "narration_GER";
 
   scenesData.forEach((scene,index)=>{
     document.getElementById(
