@@ -47,38 +47,23 @@ body{
 
 <body>
 
-<div class="menu">
+    <div class="menu">
 
-    <button onclick="location.href='scenes/fantasy-narrative.html'">
-        Fantasy Narrative
-    </button>
+        <h1 id="welcomeText">Welcome!</h1>
+    
+    </div>
+    
+    <script>
+    const lang = new URLSearchParams(window.location.search).get("lang") || "eng";
+    
+    console.log("Selected language:", lang);
+    
+    if (lang === "ger") {
+        document.getElementById("welcomeText").textContent = "Willkommen!";
+    } else {
+        document.getElementById("welcomeText").textContent = "Welcome!";
+    }
 
-    <button onclick="location.href='scenes/real-narrative.html'">
-      Real Narrative
-  </button>
-
-    <button onclick="location.href='scenes/fantasy-comic.html'">
-      Fantasy + Comic
-  </button>
-
-    <button onclick="location.href='scenes/fantasy-realistic.html'">
-        Fantasy + Realistic
-    </button>
-
-    <button onclick="location.href='scenes/real-comic.html'">
-        Real-world + Comic
-    </button>
-
-    <button onclick="location.href='scenes/real-realistic.html'">
-        Real-world + Realistic
-    </button>
-
-</div>
-
+    </script>
 </body>
-
-<script>
-const lang = new URLSearchParams(window.location.search).get("lang") || "eng";
-console.log("Selected language:", lang);
-</script>
 </html>
