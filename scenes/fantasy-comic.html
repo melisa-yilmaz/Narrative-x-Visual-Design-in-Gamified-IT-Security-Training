@@ -169,8 +169,6 @@
   );
   const narrativeType = "fantasy";
   const visualStyle = "comic";
-
-
   const scenesData =  story.narratives[narrativeType].data;
   const totalScenes = scenesData.length;
 
@@ -182,11 +180,10 @@
     imageElement.src = scene.visual_style[visualStyle].image;
 
 
-
     document.getElementById(
         `scene${index+1}-text`
     ).innerHTML =
-        scene.narration
+        scene.narrationVar
         .trim()
         .split("\n")
         .map(line => `<p>${line.trim()}</p>`)
@@ -242,7 +239,7 @@
         renderInformationPanel(2, narrativeType);
     }
 
-    
+
       window.scrollTo({
           top:0,
           behavior:'smooth'

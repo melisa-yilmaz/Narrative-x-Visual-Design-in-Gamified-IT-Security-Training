@@ -158,13 +158,21 @@
   const scenesData =  story.narratives[narrativeType].data;
   const totalScenes = scenesData.length;
 
+  const lang =
+    new URLSearchParams(window.location.search).get("lang") || "en";
+
+    console.log("Language:", lang);
+
+    const narrationVar =
+    lang === "en" ? "narration_EN" : "narration_GER";
+    
   scenesData.forEach((scene,index)=>{
 
 
     document.getElementById(
         `scene${index+1}-text`
     ).innerHTML =
-        scene.narration
+        scene[narrationVar]
         .trim()
         .split("\n")
         .map(line => `<p>${line.trim()}</p>`)

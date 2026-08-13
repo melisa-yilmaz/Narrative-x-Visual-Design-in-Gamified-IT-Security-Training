@@ -44,103 +44,53 @@ body{
 </style>
 
 </head>
+
 <body>
-
-    <div class="menu">
-        <h1 id="welcomeText">Welcome!</h1>
-    </div>
-
 
     <script>
 
-        // =====================================
-        // GET PARAMETERS FROM SOSCI
-        // =====================================
-
-        const params = new URLSearchParams(window.location.search);
-
-        const language =
-            params.get("lang") || "en";
-
-        const condition =
-            params.get("condition") || "1";
-
-
-        console.log("Language:", language);
-        console.log("Condition:", condition);
-
-
-        // =====================================
-        // LANGUAGE
-        // =====================================
-
-        if (language === "ger") {
-
-            document.getElementById("welcomeText")
-                .textContent = "Willkommen!";
-
-        } else {
-
-            document.getElementById("welcomeText")
-                .textContent = "Welcome!";
-
-        }
-
-
-        // =====================================
-        // CONDITIONS
-        // =====================================
-
-        const scenes = {
-
-            "1": "scenes/fantasy-narrative.html",
-
-            "2": "scenes/real-narrative.html",
-
-            "3": "scenes/fantasy-comic.html",
-
-            "4": "scenes/fantasy-realistic.html",
-
-            "5": "scenes/real-comic.html",
-
-            "6": "scenes/real-realistic.html"
-
-        };
-
-
-        // =====================================
-        // SELECT CONDITION
-        // =====================================
-
-        const selectedScene =
-            scenes[condition];
-
-
-        console.log(
-            "Selected scene:",
-            selectedScene
-        );
-
-
-        // =====================================
-        // OPEN SELECTED HTML
-        // =====================================
-
-        if (selectedScene) {
-
+        // Get language from SoSci URL
+        const lang =
+            new URLSearchParams(window.location.search).get("lang") || "en";
+    
+        console.log("Selected language:", lang);
+    
+    
+        // Open scene and pass language along
+        function openScene(scene) {
+    
             window.location.href =
-                selectedScene
-
-        } else {
-
-            console.error(
-                "Invalid condition:",
-                condition
-            );
-
+                scene + "?lang=" + encodeURIComponent(lang);
+    
         }
-
+    
     </script>
+    
+<div class="menu">
+
+
+    <button onclick="openScene('scenes/fantasy-narrative.html')">
+        Fantasy Narrative
+    </button>
+
+    <button onclick="openScene('scenes/fantasy-comic.html')">
+      Fantasy + Comic
+  </button>
+
+  <button onclick="openScene('scenes/fantasy-realistic.html')">
+        Fantasy + Realistic
+    </button>
+
+    <button onclick="location.href='scenes/real-comic.html'">
+        Real-world + Comic
+    </button>
+
+    <button onclick="location.href='scenes/real-realistic.html'">
+        Real-world + Realistic
+    </button>
+
+</div>
+
 
 </body>
 </html>
@@ -165,5 +115,3 @@ body{
 
     </script>
 </body>
-
--->
