@@ -28,7 +28,7 @@ const informationPanelContent = {
 
             mapping:
            `<strong>In the story:</strong> Shadow Mimics represent attackers who try predictable passwords.
-            A Spellkey represents a password. A unique Spellkey protects one account.`
+            <p>A Spellkey represents a password. A unique Spellkey protects one account.</p>`
         },
 
 
@@ -59,8 +59,9 @@ const informationPanelContent = {
                 "🔐 One Master Password → 🔑 Many Unique Passwords",
 
             mapping:
-                `<strong>In the story:</strong>   The Spellkey represents a password, while each magical vault represents a different account. 
-                The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password.`
+                `<strong>In the story:</strong> The Spellkey represents a password, while each magical vault represents a different account. 
+
+                <p>The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password.</p>`
         },
     },
 
