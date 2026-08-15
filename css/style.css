@@ -12,43 +12,80 @@
     --ward-warn-glow: rgba(214, 162, 74, 0.18);
     --ward-arcane: #9d8cd9;
     --ward-arcane-glow: rgba(157, 140, 217, 0.18);
+
+    --theme-bg: #0a0a0f;
+    --theme-text: #d4c4a8;
+    --theme-font: 'Georgia', serif;
+  
+    --theme-accent: #c8a96e;    
+    --theme-accent-bright: #f0c87e; 
+    --theme-accent-dim: #6a5a3a;  
+    --theme-muted: #8a7a6a;      
+    --theme-pip-idle: #2a2a3a;
+
+    --theme-panel-bg: rgba(26, 21, 32, 0.75);
+    --theme-panel-border: rgba(106, 90, 58, 0.3);
+    --theme-glow: rgba(200, 169, 110, 0.07);
+  
+    --theme-rune-border: #6a5a3a;
+    --theme-subtext: #b8a888; 
+    --theme-font-display: 'Georgia', serif;
+    --theme-font-mono: 'JetBrains Mono', monospace;
+
+    --theme-card-bg: rgba(21, 17, 30, 0.6);
+    --theme-image-bg: #1a1520;
+    --theme-image-gradient: linear-gradient(135deg, #1a1520 0%, #2a1f35 50%, #1a2535 100%);
   }
 
   body{
     background:
-      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(200,169,110,0.07), transparent 60%),
-      var(--ink);
-    color:var(--parchment);
-    font-family:var(--font-body);
+    radial-gradient(ellipse 900px 500px at 50% -10%, var(--theme-glow), transparent 60%),
+    var(--theme-bg);
+    color: var(--theme-text);
+    font-family: var(--theme-font);
     min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:3rem 1.25rem;
+    padding:1rem 0.50rem;
   }
 
-  .wrap{width:100%;max-width:840px;}
+  .wrap{width:100%;max-width:1000px;}
 
-body.fantasy {
-    background: #0a0a0f;
-    color: #d4c4a8;
-    font-family: 'Georgia', serif;
-}
+  body.fantasy {
+    background: var(--theme-bg);
+    color: var(--theme-text);
+    font-family: var(--theme-font);
+  }
+  
 
 
-body.real {
-    background: #0a0a0f;
-    font-family: 'Georgia', serif;
-    color: #bbbbb9;
+  body.real {
+    --theme-bg: #0b0d10;
+  --theme-text: #e6e8eb;
+  --theme-font: 'Inter', 'system-ui', -apple-system, 'Segoe UI', sans-serif;
 
-}
+  --theme-accent: #5b9cf6;
+  --theme-accent-bright: #8ab8ff;
+  --theme-accent-dim: #1c2b45;
+  --theme-muted: #8b929c;
+  --theme-pip-idle: #262a30;
+  --theme-subtext: #9aa1ab;
+  --theme-rune-border: #5b9cf6;
 
+  --theme-glow: rgba(91, 156, 246, 0.06);
+  --theme-panel-bg: #121417;
+  --theme-panel-border: rgba(255, 255, 255, 0.08);
+  --theme-card-bg: #16181c;
+  --theme-image-bg: #16181c;
+  --theme-image-gradient: linear-gradient(135deg, #16181c 0%, #1a1d22 50%, #14161a);
+  }
   .scene {
     display: none;
     max-width: 780px;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 1rem 0.75rem;
     animation: fadein 1.2s ease;
   }
 
@@ -59,19 +96,12 @@ body.real {
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  .scene-number {
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #8a7a6a;
-    margin-bottom: 1rem;
-  }
 
   .scene-image {
     width: 100%;
     border-radius: 8px;
     display: block;
-    background: #1a1520;
+    background: var(--theme-image-bg);
     min-height: 380px;
     object-fit: cover;
   }
@@ -80,7 +110,7 @@ body.real {
     width: 100%;
     min-height: 380px;
     border-radius: 8px;
-    background: linear-gradient(135deg, #1a1520 0%, #2a1f35 50%, #1a2535 100%);
+    background: var(--theme-image-gradient);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,13 +133,13 @@ body.real {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
   .continue-btn, .back-btn {
+    border: 1px solid var(--theme-accent-dim);
+    color: var(--theme-accent);
+    font-family: var(--theme-font);
     background: transparent;
-    border: 1px solid #6a5a3a;
-    color: #c8a96e;
-    font-family: 'Georgia', serif;
     font-size: 14px;
     letter-spacing: 0.12em;
     padding: 12px 36px;
@@ -119,73 +149,72 @@ body.real {
   }
 
   .continue-btn:hover, .back-btn:hover {
-    background: #6a5a3a;
-    color: #0a0a0f;
+    background: var(--theme-accent-dim);
+    color: var(--theme-bg);
   }
 
   .progress {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 1.8rem;
+    margin-top: 1.25rem;
   }
 
   .pip {
+    background: var(--theme-pip-idle);
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #2a2a3a;
     transition: background 0.4s;
   }
 
-  .pip.done { background: #c8a96e; }
-  .pip.active { background: #f0c87e; }
+  .pip.done { background: var(--theme-accent);}
+  .pip.active { background: var(--theme-accent-bright);  }
 
   .dashboard-container {
-    background: rgba(26, 21, 32, 0.75);
-    border: 1px solid rgba(106, 90, 58, 0.3);
+    background: var(--theme-panel-bg);
+    border: 1px solid var(--theme-panel-border);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1.5rem;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    margin-top: 1.5rem;
+    text-align:center;
   }
   .dashboard-header{
     text-align:center;
-    margin-bottom:2.25rem;
+    margin-bottom:1.5rem;
   }
   .rune-mark{
     display:inline-flex;
     align-items:center;
     justify-content:center;
     width:38px;height:38px;
-    border:1px solid var(--hairline);
+    border: 1px solid var(--theme-rune-border);
     border-radius:50%;
-    color:var(--gold);
+    color: var(--theme-accent);
     font-size:16px;
     margin-bottom:1rem;
   }
   .dashboard-header h2{
-    font-family:var(--font-display);
+    font-family: var(--theme-font-display);
     font-weight:600;
     font-size:clamp(22px,4vw,30px);
     letter-spacing:0.02em;
-    color:var(--gold-bright);
+    color: var(--theme-accent-bright);
   }
   .dashboard-header p{
     margin-top:0.6rem;
-    color:var(--parchment-dim);
+    color: var(--theme-subtext);
     font-size:16px;
     font-style:italic;
   }
 
-  
-
   .dashboard-grid {
+    text-align:left;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   @media (max-width: 600px) {
@@ -196,7 +225,7 @@ body.real {
   position: relative;
   border-radius: 10px;
   padding: 1.5rem;
-  background: rgba(21, 17, 30, 0.6);
+  background: var(--theme-card-bg);
   border: 1px solid transparent;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -247,7 +276,7 @@ body.real {
     font-size: 10.5px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #8a7a6a;
+    color: var(--theme-muted);
     margin-bottom: 0.5rem;
     display: block;
   }
@@ -276,13 +305,13 @@ body.real {
 .vulnerable li::before { background: var(--ward-bad); }
 .reuse li::before      { background: var(--ward-warn); }
 .keeper li::before     { background: var(--ward-arcane); }
-.info-card li strong   { color: #f0c87e; font-weight: 600; }
+.info-card li strong   { color: var(--theme-accent-bright); font-weight: 600; }
 .info-card li:last-child { margin-bottom: 0; }
 
 
 .card-example{
     margin-top:1rem;
-    font-family:var(--font-mono);
+    font-family: var(--theme-font-mono);
     font-size:13px;
     padding:0.6rem 0.8rem;
     border-radius:6px;
@@ -291,65 +320,6 @@ body.real {
   .ward-good{background:var(--ward-good-glow); color:#a7e0bd;}
   .ward-bad{background:var(--ward-bad-glow); color:#e3a58c; text-decoration:line-through; text-decoration-color:rgba(201,112,79,0.5);}
   .ward-warn{background:var(--ward-warn-glow); color:#f0d19c;}
-  .ward-arcane{background:rgba(21, 17, 30, 0.6); color:#c9bdf0;}
-
-
-
-  .spellkey-input {
-    width: 100%;
-    max-width: 400px;
-    background: #0a0a0f;
-    border: 1px solid #6a5a3a;
-    color: #f0e6d3;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-family: monospace;
-    font-size: 16px;
-    text-align: center;
-    margin: 0.8rem 0;
-    outline: none;
-  }
-
-  .spellkey-input:focus {
-    border-color: #c8a96e;
-    box-shadow: 0 0 8px rgba(200, 169, 110, 0.3);
-  }
-
-
-
-
-
-  .strength-text {
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    color: #8a7a6a;
-    margin-top: 0.4rem;
-  }
-
-.explanation-text {
-    max-width: 900px;
-    margin: 2rem auto;
-    line-height: 1.8;
-    text-align: left;
-}
-
-
-.explanation-text h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-
-.explanation-text h3 {
-    margin-top: 1.8rem;
-    color: #c8a96e;
-    font-size: 18px;
-}
-
-
-.explanation-text p {
-    color: #ddd;
-    font-size: 16px;
-}
+  .ward-arcane{ color:#c9bdf0;}
 
 

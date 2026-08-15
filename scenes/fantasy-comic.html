@@ -10,7 +10,6 @@
 
 <body class="fantasy">
 <div class="scene active" id="scene-1">
-
   <img id="scene1-image" class="scene-image">
   <div id="scene1-text" class="narration"></div>
 
@@ -219,9 +218,7 @@
 
   let sceneHistory = ["1"];
   function goTo(sceneId) {
-
       let currentScene = document.querySelector(".scene.active");
-
       if(currentScene) {
           let currentId = currentScene.id.replace("scene-", "");
 

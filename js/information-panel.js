@@ -27,7 +27,8 @@ const informationPanelContent = {
             secondTopicExample: "🔐 phoenix-waterfall-compass-fox",
 
             mapping:
-            "<strong>In the story:</strong> Shadow Mimics represent attackers who try predictable passwords. A Spellkey represents a password. A unique Spellkey protects one account."
+           `<strong>In the story:</strong> Shadow Mimics represent attackers who try predictable passwords.
+            A Spellkey represents a password. A unique Spellkey protects one account.`
         },
 
 
@@ -58,7 +59,8 @@ const informationPanelContent = {
                 "🔐 One Master Password → 🔑 Many Unique Passwords",
 
             mapping:
-                "<strong>In the story:</strong>   The Spellkey represents a password, while each magical vault represents a different account. The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password."
+                `<strong>In the story:</strong>   The Spellkey represents a password, while each magical vault represents a different account. 
+                The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password.`
         },
     },
 
@@ -240,10 +242,12 @@ function renderInformationPanel(panelNumber, narrativeType) {
 
     if (mapping) {
 
-        if (content.mapping) {
+        if (narrativeType === "fantasy" && content.mapping) {
             mapping.innerHTML = content.mapping;
+            mapping.style.display = "block";
         } else {
             mapping.innerHTML = "";
+            mapping.style.display = "none";
         }
 
     }
@@ -260,6 +264,9 @@ function createInformationPanelScene1() {
             </div>
 
             <div class="dashboard-container">
+                <div id="panel1-mapping"
+                     class="card-example ward-arcane">
+                </div>
                 <div class="dashboard-grid">
 
                     <article class="info-card vulnerable">
@@ -307,9 +314,6 @@ function createInformationPanelScene1() {
 
                 </div>
 
-                <div id="panel1-mapping"
-                     class="card-example ward-arcane">
-                </div>
             </div>
         </div>
     `;
@@ -325,6 +329,9 @@ function createInformationPanelScene2() {
             </div>
 
             <div class="dashboard-container">
+                    <div id="panel2-mapping"
+                        class="card-example ward-arcane">
+                    </div>
                 <div class="dashboard-grid">
 
                     <!-- The hidden risk -->
@@ -375,9 +382,6 @@ function createInformationPanelScene2() {
 
                 </div>
 
-                <div id="panel2-mapping"
-                     class="card-example ward-arcane">
-                </div>
             </div>
         </div>
     `;
