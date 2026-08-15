@@ -40,13 +40,11 @@ const scenes = [
                         },
                         narration_EN: `Professor Aurelia leads Alex beneath the castle.
                         There they discover a chamber filled with broken magical locks and abandoned Spellkeys.
-                        Dark Mimic creatures crawl among them.
-                        The creatures easily open locks connected to simple and predictable Spellkeys.
+                        Dark Mimic creatures crawl among them. The creatures easily open locks connected to simple and predictable Spellkeys.
                         The professor explains that the Mimics have learned the patterns used by careless students.`,
                         narration_GER: `Professorin Aurelia führt den Lehrling in die Gewölbe unterhalb des Schlosses.
                         Dort entdecken sie eine Kammer voller zerbrochener magischer Schlösser und zurückgelassener Spellkeys.
-                        Dunkle Mimic-Kreaturen kriechen zwischen ihnen umher.
-                        Die Kreaturen können Schlösser, die mit einfachen und vorhersehbaren Spellkeys gesichert sind, mühelos öffnen.
+                        Dunkle Mimic-Kreaturen kriechen zwischen ihnen umher. Die Kreaturen können Schlösser, die mit einfachen und vorhersehbaren Spellkeys gesichert sind, mühelos öffnen.
                         Die Professorin erklärt, dass die Mimics inzwischen die Muster unvorsichtiger Schüler erkannt haben.`,
                     },
                     {
@@ -60,13 +58,11 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene3.png"
                             }
                         },
-                        narration_EN: `The professor takes Alex to the Library of Unusual Things.
-                        She explains that strong Spellkeys are built from unexpected combinations.
+                        narration_EN: `The professor takes Alex to the Library of Unusual Things. She explains that strong Spellkeys are built from unexpected combinations.
                         The apprentice chooses four unrelated magical elements:
                         A phoenix feather, A moonlit waterfall, A silver compass, A midnight fox
                         Golden magic weaves them together into a unique Spellkey unlike any seen before.`,
-                        narration_GER:`Die Professorin führt den Lehrling in die Bibliothek der ungewöhnlichen Dinge.
-                        Sie erklärt ihm, dass starke Spellkeys aus unerwarteten Kombinationen entstehen.
+                        narration_GER:`Die Professorin führt den Lehrling in die Bibliothek der ungewöhnlichen Dinge. Sie erklärt ihm, dass starke Spellkeys aus unerwarteten Kombinationen entstehen.
                         Der Lehrling wählt vier magische Elemente aus, die keinerlei Verbindung zueinander haben:
                         eine Phönixfeder, einen vom Mondlicht erhellten Wasserfall, einen silbernen Kompass und einen Mitternachtsfuchs.
                         Goldene Magie verwebt sie miteinander und formt daraus einen einzigartigen Spellkey, wie ihn noch nie jemand zuvor gesehen hat.
@@ -83,22 +79,15 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene4.png"
                             }
                         },
-                        narration_EN: `At midnight, the apprentice presents the newly forged Spellkey before the vault.
-                        The Mimics emerge and attempt to imitate common Spellkeys.
-                        But they cannot understand the unique combination.
-                        Their shadows dissolve. The vault's runes awaken.
+                        narration_EN: `At midnight, the apprentice presents the newly forged Spellkey before the vault. The Mimics emerge and attempt to imitate common Spellkeys.
+                        But they cannot understand the unique combination. Their shadows dissolve. The vault's runes awaken.
                         The massive doors open, revealing a chamber filled with protected magical knowledge.
-                        Professor Aurelia smiles. "The strongest Spellkeys are not the most complicated."
-                        "They are the most unique."`,
-                        narration_GER: `Um Mitternacht präsentiert der Lehrling den neu geschmiedeten Spellkey vor dem Tresor.
-                        Die Mimics tauchen auf und versuchen, gewöhnliche Spellkeys nachzuahmen.
-                        Doch sie können die einzigartige Kombination nicht entschlüsseln.
-                        Ihre Schatten lösen sich auf.
+                        Professor Aurelia smiles. "The strongest Spellkeys are not the most complicated. They are the most unique."`,
+                        narration_GER: `Um Mitternacht präsentiert der Lehrling den neu geschmiedeten Spellkey vor dem Tresor. Die Mimics tauchen auf und versuchen, gewöhnliche Spellkeys nachzuahmen.
+                        Doch sie können die einzigartige Kombination nicht entschlüsseln. Ihre Schatten lösen sich auf.
                         Die Runen des Tresors erwachen zum Leben.
                         Die gewaltigen Türen öffnen sich und geben den Blick auf eine Kammer frei, die mit geschütztem magischem Wissen gefüllt ist.
-                        Professorin Aurelia lächelt.
-                        „Die stärksten Spellkeys sind nicht die kompliziertesten.“
-                        „Sie sind die einzigartigsten.“`,
+                        Professorin Aurelia lächelt. „Die stärksten Spellkeys sind nicht die kompliziertesten. Sie sind die einzigartigsten.“`,
                     },
                     {
                         scene_id: 5,
@@ -111,35 +100,24 @@ const scenes = [
                                 image: "../images/fantasy-realistic/password-security/Scene5.png"
                             }
                         },
-                        narration_EN: `Professor Aurelia closes the vault with a smile.
-                        "You have forged a remarkable Spellkey," she says.
-                        "But there is one more lesson every guardian must learn."
+                        narration_EN: `Professor Aurelia closes the vault with a smile. "You have forged a remarkable Spellkey," she says. But there is one more lesson every guardian must learn."
                         She leads Alex to the Hall of Echoes, where countless magical vaults shimmer throughout the kingdom.
-                        The apprentice notices many vaults glowing with the same magical signature.
-                        "They all use the same Spellkey?" Alex asks.
+                        The apprentice notices many vaults glowing with the same magical signature. "They all use the same Spellkey?" Alex asks.
                         Professor Aurelia nods.  "Many guardians believe one strong Spellkey is enough for every vault."
                     
-                        Suddenly, a messenger owl arrives with troubling news.
-                        In a distant village, Shadow Mimics have stolen a collection of Spellkeys.
+                        Suddenly, a messenger owl arrives with troubling news. In a distant village, Shadow Mimics have stolen a collection of Spellkeys.
                         The Mimics travel from vault to vault, testing the stolen magic. Every vault protected by the same Spellkey opens without resistance.
                         One...Then another...Then dozens more. Alex watches in disbelief.
                         "So one stolen Spellkey can unlock many vaults?"`,
-                        narration_GER: `Professorin Aurelia schließt den Tresor mit einem Lächeln.
-                        „Du hast einen bemerkenswerten Spellkey geschmiedet“, sagt sie.
-                        „Doch es gibt noch eine weitere Lektion, die jeder Hüter lernen muss.“
+                        narration_GER: `Professorin Aurelia schließt den Tresor mit einem Lächeln. „Du hast einen bemerkenswerten Spellkey geschmiedet“, sagt sie. Doch es gibt noch eine weitere Lektion, die jeder Hüter lernen muss.“
                         Sie führt den Lehrling in die Halle der Echos, wo unzählige magische Tresore aus dem ganzen Königreich schimmern.
-                        Der Lehrling bemerkt, dass viele Tresore dieselbe magische Signatur tragen.
-                        „Benutzen sie alle denselben Spellkey?“, fragt der Lehrling.
-                        Professorin Aurelia nickt.
-                        „Viele Hüter glauben, dass ein einziger starker Spellkey für alle Tresore ausreicht.“
-                        Plötzlich trifft eine Boteneule mit beunruhigenden Nachrichten ein.
-                        In einem weit entfernten Dorf haben Schatten-Mimics eine Sammlung von Spellkeys gestohlen.
+                        Der Lehrling bemerkt, dass viele Tresore dieselbe magische Signatur tragen. „Benutzen sie alle denselben Spellkey?“, fragt der Lehrling.
+                        Professorin Aurelia nickt. „Viele Hüter glauben, dass ein einziger starker Spellkey für alle Tresore ausreicht.“
+                        
+                        Plötzlich trifft eine Boteneule mit beunruhigenden Nachrichten ein. In einem weit entfernten Dorf haben Schatten-Mimics eine Sammlung von Spellkeys gestohlen.
                         Die Mimics ziehen von Tresor zu Tresor und testen die gestohlene Magie.
                         Jeder Tresor, der mit demselben Spellkey geschützt ist, öffnet sich ohne Widerstand.
-                        Einer …
-                        Dann ein weiterer …
-                        Dann Dutzende mehr.
-                        Der Lehrling beobachtet alles ungläubig.
+                        Einer… Dann ein weiterer … Dann Dutzende mehr.Der Lehrling beobachtet alles ungläubig.
                         „Das bedeutet also, dass ein einziger gestohlener Spellkey viele Tresore öffnen kann?“`,
                         },
                     {
@@ -177,8 +155,7 @@ const scenes = [
                             }
                         },
                         narration_EN: `Days pass, and Alex now protects dozens of magical vaults across the kingdom.
-                        Alex looks at the countless Spellkeys they have created.
-                        "Professor, how can I remember every Spellkey?"
+                        Alex looks at the countless Spellkeys they have created. "Professor, how can I remember every Spellkey?"
                         Professor Aurelia leads Alex to an ancient chamber beneath the academy.
                         There rests a glowing magical tome covered in golden runes.
                         "This is the Book of Infinite Keys," she explains.
