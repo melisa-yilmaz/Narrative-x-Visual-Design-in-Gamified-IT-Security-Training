@@ -18,7 +18,7 @@ const scenes = [
                         narration_EN: `A young apprentice, Alex, arrives at the prestigious Academy of Arcane Knowledge. Inside the Hall of Secrets stands an ancient vault containing powerful magical artifacts and knowledge.
                         Professor Aurelia, Keeper of Secrets, welcomes the apprentice and explains that every student must create a magical Spellkey to protect their personal vault. However, she warns that many students choose weak Spellkeys. And something in the castle has learned to exploit them.
                         `,
-                        narration_GER: `Ein junger Lehrling,Alex, kommt an der renommierten Akademie des Arkanen Wissens an. In der Halle der Geheimnisse befindet sich ein uralter Tresor, in dem mächtige magische Artefakte und verborgenes Wissen aufbewahrt werden.
+                        narration_GER: `Ein junger Lehrling, Alex, kommt an der renommierten Akademie des Arkanen Wissens an. In der Halle der Geheimnisse befindet sich ein uralter Tresor, in dem mächtige magische Artefakte und verborgenes Wissen aufbewahrt werden.
                         Professorin Aurelia, die Hüterin der Geheimnisse, heißt den Lehrling willkommen und erklärt ihm, dass jeder Schüler einen eigenen magischen Spellkey erschaffen muss, um seinen persönlichen Tresor zu schützen. Sie warnt ihn jedoch, dass viele Schüler zu schwache Spellkeys wählen. Und etwas im Schloss hat bereits gelernt, diese Schwächen auszunutzen.
                         `,
 
@@ -152,7 +152,7 @@ const scenes = [
                             }
                         },
                         narration_EN: `A young professional named Alex starts a new job at a growing technology company. On the first day, Alex receives access to important digital accounts: email, work systems, cloud storage, and personal services.
-                        The security team explains that every account needs a strong password to protect valuable information. However, they warn that many people still choose simple passwords.And attackers have learned how to exploit them.
+                        The security team explains that every account needs a strong password to protect valuable information. However, they warn that many people still choose simple passwords. And attackers have learned how to exploit them.
                         `,
                         narration_GER:`Ein junger Berufstätiger namens Alex beginnt eine neue Stelle bei einem wachsenden Technologieunternehmen. An seinem ersten Arbeitstag erhält Alex Zugriff auf wichtige digitale Konten: E-Mail, Arbeitssysteme, Cloud-Speicher und persönliche Dienste.
                         Das Sicherheitsteam erklärt, dass jedes Konto ein starkes Passwort benötigt, um wertvolle Informationen zu schützen. Es warnt jedoch davor, dass viele Menschen noch immer einfache Passwörter wählen. Und Angreifer haben gelernt, diese Schwächen auszunutzen.`

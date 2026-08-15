@@ -45,8 +45,7 @@ const informationPanelContent = {
             ],
 
             firstTopicExample:
-                `🗝️ Same Spellkey:
-                 📧 Email · ☁️ Cloud · 🏦 Banking`,
+                `🗝️ Same Spellkey →  📧 Email · ☁️ Cloud · 🏦 Banking`,
 
             secondTopicTitle: "The Book of Infinite Keys: Don't Have to Remember Them All",
 
