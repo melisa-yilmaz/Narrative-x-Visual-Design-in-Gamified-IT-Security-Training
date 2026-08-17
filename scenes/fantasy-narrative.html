@@ -218,11 +218,12 @@
       document.getElementById('scene-' + sceneId)
           .classList.add('active');
 
+      
     if (sceneId === "information") {
-        renderInformationPanel(1, narrativeType);
+        renderInformationPanel(1, narrativeType,lang);
     }
     if (sceneId === "information2") {
-        renderInformationPanel(2, narrativeType);
+        renderInformationPanel(2, narrativeType, lang);
     }
 
 

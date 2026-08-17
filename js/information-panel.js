@@ -2,140 +2,279 @@ const informationPanelContent = {
 
     fantasy: {
 
-        panel1: {
-            title: "The Art of the Spellkey",
-            subtitle: "The secrets behind strong and secure Spellkeys:",
+        eng: {
+            panel1: {
+                title: "The Art of the Spellkey",
+                subtitle: "The secrets behind strong and secure Spellkeys:",
+                
+                firstCardTitle: "Common Weaknesses",
+                firstTopicTitle: "Patterns Every Attackers Can Guess",
+    
+                firstTopicPoints: [
+                    "❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.",
+                    "❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
+                    "❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns."
+                ],
+    
+                firstTopicExample: "🔓 academy2026, spellkey123",
+    
+                secondCardTitle: "Strong Protections",
+                secondTopicTitle: "What Makes a Spellkey Strong?",
+    
+                secondTopicPoints: [
+                    "✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess (at least 12–16 characters).",
+                    "✨ <strong>Make it unpredictable:</strong> Use unrelated words or ideas that attackers would not easily expect.",
+                    "✨ <strong>No personal information:</strong> Do not build passwords from information that someone could discover about you."
+                ],
+    
+                secondTopicExample: "🔐 phoenix-waterfall-compass-fox",
+    
+                mapping:
+               `<strong>In the story:</strong> Shadow Mimics represent attackers who try predictable passwords.
+                <p>A Spellkey represents a password. A unique Spellkey protects one account.</p>`
+            },
 
-            firstTopicTitle: "Patterns Every Attackers Can Guess",
 
-            firstTopicPoints: [
-                "❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.",
-                "❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
-                "❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns."
-            ],
+            panel2: {
+                title: "The Spellkey Keeper's Guide",
+                subtitle: "What the apprentice learned about Spellkey reuse and the Book of Infinite Keys.",
 
-            firstTopicExample: "🔓 academy2026, spellkey123",
+                firstCardTitle: "The Danger of Reuse",
+                firstTopicTitle: "One Spellkey, Many Vaults",
 
-            secondTopicTitle: "What Makes a Spellkey Strong?",
+                firstTopicPoints: [
+                    "⚠️ <strong>Never reuse important passwords:</strong>  Using the same password for several accounts means one stolen password could put multiple accounts at risk.",
+                    "⚠️ <strong>One breach can spread the risk:</strong> A password's strength doesn't matter if attackers obtain your password from one account, they may try it on your other accounts.",
+                    "✅ <strong>How to fix it?:</strong> A different password for every account keeps a single breach contained to that one account."
+                ],
 
-            secondTopicPoints: [
-                "✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess (at least 12–16 characters).",
-                "✨ <strong>Make it unpredictable:</strong> Use unrelated words or ideas that attackers would not easily expect.",
-                "✨ <strong>No personal information:</strong> Do not build passwords from information that someone could discover about you."
-            ],
+                firstTopicExample:
+                    `🗝️ Same Spellkey →  📧 Email · ☁️ Cloud · 🏦 Banking`,
 
-            secondTopicExample: "🔐 phoenix-waterfall-compass-fox",
+                secondCardTitle: "A Practical Solution",
+                secondTopicTitle: "The Book of Infinite Keys: Don't Have to Remember Them All",
 
-            mapping:
-           `<strong>In the story:</strong> Shadow Mimics represent attackers who try predictable passwords.
-            <p>A Spellkey represents a password. A unique Spellkey protects one account.</p>`
+                secondTopicPoints: [
+                    "🔑 <strong>Generate unique passwords:</strong>  A password manager can create strong, random passwords for your accounts.",
+                    "🔑 <strong>Store them securely:</strong> You do not need to remember every password yourself.",
+                    "🔑 <strong>Remember one master password:</strong> Only need to remember the password that protects your password manager."
+                ],
+
+                secondTopicExample:
+                    "🔐 One Master Password → 🔑 Many Unique Passwords",
+
+                mapping:
+                    `<strong>In the story:</strong> The Spellkey represents a password, while each magical vault represents a different account. 
+
+                    <p>The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password.</p>`
+            },
+    
         },
 
+        ger: {
+            panel1: {
+                title: "Die Kunst des Spellkeys",
+                subtitle: "Die Geheimnisse hinter starken und sicheren Spellkeys:",
 
-        panel2: {
-            title: "The Spellkey Keeper's Guide",
-            subtitle: "What the apprentice learned about Spellkey reuse and the Book of Infinite Keys.",
+                firstCardTitle: "Häufige Schwachstellen",
+                firstTopicTitle: "Muster, die Angreifer leicht erraten können",
 
-            firstTopicTitle: "One Spellkey, Many Vaults",
+                firstTopicPoints: [
+                    "❌ <strong>Einfache Passwörter:</strong> Passwörter wie <em>123456</em>, <em>password123</em> oder wiederholte Zeichen sind für Angreifer leicht zu erraten.",
+                    "❌ <strong>Persönliche Informationen:</strong> Namen, Geburtstage, Namen von Haustieren oder andere persönliche Informationen können Passwörter leichter erratbar machen.",
+                    "❌ <strong>Vorhersehbare Ersetzungen:</strong> Kleine Änderungen wie das Hinzufügen von <em>123</em> oder das Ersetzen von Buchstaben durch Symbole können weiterhin vorhersehbaren Mustern folgen."
+                ],
 
-            firstTopicPoints: [
-                "⚠️ <strong>Never reuse important passwords:</strong>  Using the same password for several accounts means one stolen password could put multiple accounts at risk.",
-                "⚠️ <strong>One breach can spread the risk:</strong> A password's strength doesn't matter if attackers obtain your password from one account, they may try it on your other accounts.",
-                "✅ <strong>How to fix it?:</strong> A different password for every account keeps a single breach contained to that one account."
-            ],
+                firstTopicExample: "🔓 academy2026, spellkey123",
 
-            firstTopicExample:
-                `🗝️ Same Spellkey →  📧 Email · ☁️ Cloud · 🏦 Banking`,
+                secondCardTitle: "Starke Schutzmaßnahmen",
+                secondTopicTitle: "Was macht einen Spellkey stark?",
 
-            secondTopicTitle: "The Book of Infinite Keys: Don't Have to Remember Them All",
+                secondTopicPoints: [
+                    "✨ <strong>Mach ihn lang:</strong> Längere Passwörter sind für Angreifer im Allgemeinen schwieriger zu erraten (mindestens 12–16 Zeichen).",
+                    "✨ <strong>Mach ihn unvorhersehbar:</strong> Verwende voneinander unabhängige Wörter oder Ideen, die Angreifer nicht leicht erwarten würden.",
+                    "✨ <strong>Keine persönlichen Informationen:</strong> Verwende keine Informationen für dein Passwort, die andere über dich herausfinden könnten."
+                ],
 
-            secondTopicPoints: [
-                "🔑 <strong>Generate unique passwords:</strong>  A password manager can create strong, random passwords for your accounts.",
-                "🔑 <strong>Store them securely:</strong> You do not need to remember every password yourself.",
-                "🔑 <strong>Remember one master password:</strong> Only need to remember the password that protects your password manager."
-            ],
+                secondTopicExample: "🔐 phoenix-waterfall-compass-fox",
 
-            secondTopicExample:
-                "🔐 One Master Password → 🔑 Many Unique Passwords",
+                mapping:
+                    `<strong>In der Geschichte:</strong> Schatten-Mimics stellen Angreifer dar, die versuchen, vorhersehbare Passwörter zu erraten.
+                    <p>Ein Spellkey steht für ein Passwort. Ein einzigartiger Spellkey schützt ein Konto.</p>`
+            },
+            panel2: {
+                title: "Der Leitfaden des Spellkey-Hüters",
+                subtitle: "Was der Lehrling über die Wiederverwendung von Spellkeys und das Buch der unendlichen Schlüssel gelernt hat.",
 
-            mapping:
-                `<strong>In the story:</strong> The Spellkey represents a password, while each magical vault represents a different account. 
+                firstCardTitle: "Die Gefahr der Wiederverwendung",
+                firstTopicTitle: "Ein Spellkey, viele Tresore",
 
-                <p>The Book of Infinite Keys represents a password manager, and the Master Spell represents the master password.</p>`
-        },
+                firstTopicPoints: [
+                    "⚠️ <strong>Wichtige Passwörter niemals wiederverwenden:</strong> Wenn dasselbe Passwort für mehrere Konten verwendet wird, kann ein gestohlenes Passwort mehrere Konten gefährden.",
+                    "⚠️ <strong>Ein Datenleck kann das Risiko verbreiten:</strong> Die Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch bei anderen Konten zu verwenden.",
+                    "✅ <strong>So kannst du das verhindern:</strong> Ein anderes Passwort für jedes Konto sorgt dafür, dass ein einzelner Angriff auf dieses eine Konto begrenzt bleibt."
+                ],
+
+                firstTopicExample:
+                    "🗝️ Derselbe Spellkey → 📧 E-Mail · ☁️ Cloud · 🏦 Bank",
+
+                secondCardTitle: "Eine praktische Lösung",
+                secondTopicTitle: "Das Buch der unendlichen Schlüssel: Du musst dir nicht alle merken",
+
+                secondTopicPoints: [
+                    "🔑 <strong>Einzigartige Passwörter generieren:</strong> Ein Passwortmanager kann starke und zufällige Passwörter für deine Konten erstellen.",
+                    "🔑 <strong>Sicher speichern:</strong> Du musst dir nicht jedes Passwort selbst merken.",
+                    "🔑 <strong>Ein Master-Passwort merken:</strong> Du musst dir nur das Passwort merken, das deinen Passwortmanager schützt."
+                ],
+
+                secondTopicExample:
+                    "🔐 Ein Master-Passwort → 🔑 Viele einzigartige Passwörter",
+
+                mapping:
+                    `<strong>In der Geschichte:</strong> Der Spellkey steht für ein Passwort, während jeder magische Tresor für ein anderes Konto steht.
+                    <p>Das Buch der unendlichen Schlüssel steht für einen Passwortmanager und der Master Spell für das Master-Passwort.</p>`
+            }
+        }  
     },
 
 
     real: {
+        eng: {
+            panel1: {
+                title: "Building Strong Passwords",
+                subtitle: "What Alex learned about creating passwords that are difficult for attackers to guess.",
+    
+                firstCardTitle: "Common Weaknesses",
+                firstTopicTitle: "Passwords Attackers Can Guess",
+    
+                firstTopicPoints: [
+                    "❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.",
+                    "❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
+                    "❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns."
+                ],
+    
+                firstTopicExample: "🔓 security2026",
+    
+                secondCardTitle: "Strong Protections",
+                secondTopicTitle: "What Makes a Password Strong?",
+    
+                secondTopicPoints: [
+                    "✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess.",
+                    "✨ <strong>Make it unpredictable:</strong> Use unrelated words or ideas that attackers would not easily expect.",
+                    "✨ <strong>No personal information:</strong> Do not build passwords from information that someone could discover about you."
+                ],
+    
+                secondTopicExample: "🔐 security-wall-waterfall-7&8f2*",
+                mapping: "",
+    
+            },
+    
+    
+            panel2: {
+                title: "Protecting Multiple Accounts",
+                subtitle: "What Alex learned about password reuse and using a password manager.",
+    
 
-        panel1: {
-            title: "Building Strong Passwords",
-            subtitle: "What Alex learned about creating passwords that are difficult for attackers to guess.",
-
-            firstTopicTitle: "Passwords Attackers Can Guess",
-
-            firstTopicPoints: [
-                "❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.",
-                "❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
-                "❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns."
-            ],
-
-            firstTopicExample: "🔓 security2026",
-
-            secondTopicTitle: "What Makes a Password Strong?",
-
-            secondTopicPoints: [
-                "✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess.",
-                "✨ <strong>Make it unpredictable:</strong> Use unrelated words or ideas that attackers would not easily expect.",
-                "✨ <strong>No personal information:</strong> Do not build passwords from information that someone could discover about you."
-            ],
-
-            secondTopicExample: "🔐 security-wall-waterfall-7&8f2*",
-            mapping: "",
-
+                firstCardTitle: "The Danger of Reuse",
+                firstTopicTitle: "One Password, Many Accounts",
+    
+                firstTopicPoints: [
+                    "⚠️ <strong>Do not reuse passwords:</strong>  Using the same password for several accounts means one stolen password could put multiple accounts at risk.",
+                    "⚠️ <strong>A data breach can expose passwords:</strong> A password's strength doesn't matter if attackers obtain your password from one account, they may try it on your other accounts.",
+                    "✅ <strong>Use a different password for every account:</strong> A different password for every account keeps a single breach contained to that one account."
+                ],
+    
+                firstTopicExample:
+                    "🔓 Same Password → 📧 Email · ☁️ Cloud · 🏦 Banking",
+    
+                secondCardTitle: "A Practical Solution",
+                secondTopicTitle: "Password Managers",
+    
+                secondTopicPoints: [
+                    "🔑 <strong>Generate unique passwords:</strong>  A password manager can create strong, random passwords for your accounts.",
+                    "🔐 <strong>Store passwords securely:</strong> You do not need to remember every password yourself.",
+                    "🗝️ <strong>Remember one master password:</strong> Only need to remember the password that protects your password manager."
+                ],
+    
+                secondTopicExample:
+                    "🔐 One Master Password → 🔑 Many Unique Passwords",
+                mapping: "",
+            }
         },
 
+        ger: {
+            panel1: {
+                title: "Starke Passwörter erstellen",
+                subtitle: "Was Alex über die Erstellung von Passwörtern gelernt hat, die für Angreifer schwer zu erraten sind.",
 
-        panel2: {
-            title: "Protecting Multiple Accounts",
-            subtitle: "What Alex learned about password reuse and using a password manager.",
+                firstTopicTitle: "Passwörter, die Angreifer erraten können",
 
-            firstTopicTitle: "One Password, Many Accounts",
+                firstTopicPoints: [
+                    "❌ <strong>Einfache Passwörter:</strong> Passwörter wie <em>123456</em>, <em>password123</em> oder wiederholte Zeichen sind für Angreifer leicht zu erraten.",
+                    "❌ <strong>Persönliche Informationen:</strong> Namen, Geburtstage, Namen von Haustieren oder andere persönliche Informationen können Passwörter leichter erratbar machen.",
+                    "❌ <strong>Vorhersehbare Ersetzungen:</strong> Kleine Änderungen wie das Hinzufügen von <em>123</em> oder das Ersetzen von Buchstaben durch Symbole können weiterhin vorhersehbaren Mustern folgen."
+                ],
 
-            firstTopicPoints: [
-                "⚠️ <strong>Do not reuse passwords:</strong>  Using the same password for several accounts means one stolen password could put multiple accounts at risk.",
-                "⚠️ <strong>A data breach can expose passwords:</strong> A password's strength doesn't matter if attackers obtain your password from one account, they may try it on your other accounts.",
-                "✅ <strong>Use a different password for every account:</strong> A different password for every account keeps a single breach contained to that one account."
-            ],
+                firstCardTitle: "Häufige Schwachstellen",
+                firstTopicExample: "🔓 security2026",
 
-            firstTopicExample:
-                "🔓 Same Password → 📧 Email · ☁️ Cloud · 🏦 Banking",
+                secondCardTitle: "Starke Schutzmaßnahmen",
+                secondTopicTitle: "Was macht ein Passwort stark?",
 
-            secondTopicTitle: "Password Managers",
+                secondTopicPoints: [
+                    "✨ <strong>Mach es lang:</strong> Längere Passwörter sind für Angreifer im Allgemeinen schwieriger zu erraten.",
+                    "✨ <strong>Mach es unvorhersehbar:</strong> Verwende voneinander unabhängige Wörter oder Ideen, die Angreifer nicht leicht erwarten würden.",
+                    "✨ <strong>Keine persönlichen Informationen:</strong> Verwende keine Informationen für dein Passwort, die andere über dich herausfinden könnten."
+                ],
 
-            secondTopicPoints: [
-                "🔑 <strong>Generate unique passwords:</strong>  A password manager can create strong, random passwords for your accounts.",
-                "🔐 <strong>Store passwords securely:</strong> You do not need to remember every password yourself.",
-                "🗝️ <strong>Remember one master password:</strong> Only need to remember the password that protects your password manager."
-            ],
+                secondTopicExample: "🔐 security-wall-waterfall-7&8f2*",
 
-            secondTopicExample:
-                "🔐 One Master Password → 🔑 Many Unique Passwords",
-            mapping: "",
+                mapping: ""
+            },
 
+            panel2: {
+                title: "Mehrere Konten schützen",
+                subtitle: "Was Alex über die Wiederverwendung von Passwörtern und die Verwendung eines Passwortmanagers gelernt hat.",
+
+                firstCardTitle: "Die Gefahr der Wiederverwendung",
+                firstTopicTitle: "Ein Passwort, viele Konten",
+
+                firstTopicPoints: [
+                    "⚠️ <strong>Passwörter nicht wiederverwenden:</strong> Wenn dasselbe Passwort für mehrere Konten verwendet wird, kann ein gestohlenes Passwort mehrere Konten gefährden.",
+                    "⚠️ <strong>Ein Datenleck kann Passwörter offenlegen:</strong> Die Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch bei anderen Konten zu verwenden.",
+                    "✅ <strong>Für jedes Konto ein anderes Passwort verwenden:</strong> Ein individuelles Passwort für jedes Konto begrenzt das Risiko eines einzelnen Datenlecks auf dieses eine Konto."
+                ],
+
+                firstTopicExample:
+                    "🔓 Dasselbe Passwort → 📧 E-Mail · ☁️ Cloud · 🏦 Bank",
+
+                secondCardTitle: "Eine praktische Lösung",
+                secondTopicTitle: "Passwortmanager",
+
+                secondTopicPoints: [
+                    "🔑 <strong>Einzigartige Passwörter generieren:</strong> Ein Passwortmanager kann starke und zufällige Passwörter für deine Konten erstellen.",
+                    "🔐 <strong>Passwörter sicher speichern:</strong> Du musst dir nicht jedes Passwort selbst merken.",
+                    "🗝️ <strong>Ein Master-Passwort merken:</strong> Du musst dir nur das Passwort merken, das deinen Passwortmanager schützt."
+                ],
+
+                secondTopicExample:
+                    "🔐 Ein Master-Passwort → 🔑 Viele einzigartige Passwörter",
+
+                mapping: ""
+            }
         }
     }
 };
 
 
 
-function renderInformationPanel(panelNumber, narrativeType) {
+function renderInformationPanel(panelNumber, narrativeType, language) {
 
     const content =
-        informationPanelContent[narrativeType][`panel${panelNumber}`];
+        informationPanelContent[narrativeType]?.[language]?.[`panel${panelNumber}`];
 
     if (!content) {
-        console.error("No content found for:", narrativeType, panelNumber);
+        console.error("No content found for:", narrativeType, panelNumber, language,);
         return;
     }
     // Select the correct information scene
@@ -159,7 +298,23 @@ function renderInformationPanel(panelNumber, narrativeType) {
     scene.querySelector(".dashboard-header p").textContent =
         content.subtitle;
 
+    const firstCardTitle =
+        scene.querySelector(`#panel${panelNumber}-first-card-title`);
+    
+    const secondCardTitle =
+        scene.querySelector(`#panel${panelNumber}-second-card-title`);
 
+    if (firstCardTitle) {
+        firstCardTitle.textContent =
+            content.firstCardTitle;
+    }
+
+    if (secondCardTitle) {
+        secondCardTitle.textContent =
+            content.secondCardTitle;
+    }
+
+        
     const firstCardClass =
         panelNumber === 1
             ? ".vulnerable"
@@ -212,6 +367,7 @@ function renderInformationPanel(panelNumber, narrativeType) {
         console.error("Second card not found:", secondCardClass);
         return;
     }
+
 
     secondCard.querySelector(".card-title").innerHTML = `
 
@@ -271,7 +427,7 @@ function createInformationPanelScene1() {
                 <div class="dashboard-grid">
 
                     <article class="info-card vulnerable">
-                        <span class="card-eyebrow">Common Weaknesses</span>
+                         <span class="card-eyebrow" id="panel1-first-card-title"></span>
 
                         <div class="card-title">
                             <svg viewBox="0 0 24 24" fill="none"
@@ -293,7 +449,7 @@ function createInformationPanelScene1() {
 
 
                     <article class="info-card secure">
-                        <span class="card-eyebrow">Strong Protections</span>
+                       <span class="card-eyebrow" id="panel1-second-card-title"></span>
 
                         <div class="card-title">
                             <svg viewBox="0 0 24 24" fill="none"
@@ -337,7 +493,7 @@ function createInformationPanelScene2() {
 
                     <!-- The hidden risk -->
                     <article class="info-card reuse">
-                        <span class="card-eyebrow">The Danger of Reuse</span>
+                         <span class="card-eyebrow" id="panel2-first-card-title"></span>
 
                         <div class="card-title">
                             <svg viewBox="0 0 24 24" fill="none"
@@ -361,7 +517,7 @@ function createInformationPanelScene2() {
 
                     <!-- The practical solution -->
                     <article class="info-card keeper">
-                        <span class="card-eyebrow">A Practical Solution</span>
+                        <span class="card-eyebrow" id="panel2-second-card-title"></span>
 
                         <div class="card-title">
                             <svg viewBox="0 0 24 24" fill="none"

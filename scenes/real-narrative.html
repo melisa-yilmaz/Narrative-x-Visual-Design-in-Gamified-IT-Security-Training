@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex’s Journey</title>
+<title>Alex’s Journey to Password Security</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -218,13 +218,13 @@
       document.getElementById('scene-' + sceneId)
           .classList.add('active');
         
-      if (sceneId === "information") {
-        renderInformationPanel(1, narrativeType);
-      }
-
-      if (sceneId === "information2") {
-        renderInformationPanel(2, narrativeType);
-     }
+      
+    if (sceneId === "information") {
+        renderInformationPanel(1, narrativeType,lang);
+    }
+    if (sceneId === "information2") {
+        renderInformationPanel(2, narrativeType, lang);
+    }
 
       window.scrollTo({
           top:0,
