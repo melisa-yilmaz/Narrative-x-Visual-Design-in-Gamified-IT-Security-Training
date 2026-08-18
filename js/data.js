@@ -113,7 +113,7 @@ const scenes = [
                         Professor Aurelia smiles. "A unique Spellkey should protect a unique vault." Professor Aurelia watches as the apprentice finishes securing each vault. "You have learned an important lesson. Every vault deserves its own unique Spellkey."
                         `,
                         narration_GER: `„Genau“, sagt Professorin Aurelia. „Selbst der stärkste Spellkey wird gefährlich, wenn er mehrfach verwendet wird.“
-                        Der Lehrling kehrt in die Halle der Geheimnisse zurück und schmiedet für jeden wichtigen Tresor einen anderen Spellkey. Als die Schatten-Mimics zurückkehren, versuchen sie es erneut mit dem gestohlenen Spellkey.Der erste Tresor öffnet sich.Doch alle anderen Tresore bleiben verschlossen. Verwirrt ziehen sich die Mimics in die Dunkelheit zurück.
+                        Der Lehrling kehrt in die Halle der Geheimnisse zurück und schmiedet für jeden wichtigen Tresor einen anderen Spellkey. Als die Schatten-Mimics zurückkehren, versuchen sie es erneut mit dem gestohlenen Spellkey. Der erste Tresor öffnet sich.Doch alle anderen Tresore bleiben verschlossen. Verwirrt ziehen sich die Mimics in die Dunkelheit zurück.
                         Professorin Aurelia lächelt. „Ein einzigartiger Spellkey sollte einen einzigartigen Tresor schützen.“ Professorin Aurelia beobachtet, wie der Lehrling jeden einzelnen Tresor absichert. „Du hast eine wichtige Lektion gelernt. Jeder Tresor verdient seinen eigenen einzigartigen Spellkey.“
                         `,
                     },
