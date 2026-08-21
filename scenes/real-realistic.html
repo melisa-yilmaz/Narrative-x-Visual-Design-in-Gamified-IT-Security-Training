@@ -149,7 +149,7 @@
       <div class="navigation-buttons">
         <button class="back-btn" onclick="goBack()">‹</button>
         <button id="completeButton" class="continue-btn" type="button">
-          Complete the Experience ›
+          <span id="completeButtonText"></span> ›
         </button>
       </div>
  </div>
@@ -200,6 +200,9 @@
     }
 });
 
+  document.getElementById("completeButtonText").textContent =
+  lang === "ger" ? "Erlebnis abschließen" : "Complete the Experience";
+
   document.getElementById("completeButton").addEventListener("click", function(event) {
   event.preventDefault();
   window.parent.postMessage(
@@ -236,7 +239,6 @@
     if (sceneId === "information2") {
         renderInformationPanel(2, narrativeType, lang);
     }
-
       window.scrollTo({
           top:0,
           behavior:'smooth'

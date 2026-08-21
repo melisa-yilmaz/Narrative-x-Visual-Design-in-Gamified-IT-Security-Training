@@ -146,7 +146,7 @@
       <div class="navigation-buttons">
         <button class="back-btn" onclick="goBack()">‹</button>
         <button id="completeButton" class="continue-btn" type="button">
-          Complete the Experience ›
+          <span id="completeButtonText"></span> ›
         </button>
       </div>
  </div>
@@ -205,6 +205,9 @@
         progress.appendChild(pip);
     }
 });
+
+  document.getElementById("completeButtonText").textContent =
+  lang === "ger" ? "Erlebnis abschließen" : "Complete the Experience";
 
   document.getElementById("completeButton").addEventListener("click", function(event) {
   event.preventDefault();
