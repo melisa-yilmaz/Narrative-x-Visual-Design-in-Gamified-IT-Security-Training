@@ -8,11 +8,11 @@ const informationPanelContent = {
                 subtitle: "The secrets behind strong and secure Spellkeys:",
                 
                 firstCardTitle: "Common Weaknesses",
-                firstTopicTitle: "Patterns Every Attackers Can Guess",
+                firstTopicTitle: "Patterns Every Attacker Can Guess",
     
                 firstTopicPoints: [
                     "❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.",
-                    "❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
+                    "❌ <strong>Personal information:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
                     "❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns."
                 ],
     
@@ -111,7 +111,7 @@ const informationPanelContent = {
 
                 firstTopicPoints: [
                     "⚠️ <strong>Wichtige Passwörter niemals wiederverwenden:</strong> Wenn dasselbe Passwort für mehrere Konten verwendet wird, kann ein gestohlenes Passwort mehrere Konten gefährden.",
-                    "⚠️ <strong>Ein Datenleck kann das Risiko verbreiten:</strong> Die Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch bei anderen Konten zu verwenden.",
+                    "⚠️ <strong>Ein Datenleck kann ein Risiko für viele Konten darstellen: </strong> ie Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch für andere Konten zu verwenden.",
                     "✅ <strong>So kannst du das verhindern:</strong> Ein anderes Passwort für jedes Konto sorgt dafür, dass ein einzelner Angriff auf dieses eine Konto begrenzt bleibt."
                 ],
 
@@ -149,7 +149,7 @@ const informationPanelContent = {
     
                 firstTopicPoints: [
                     "❌ <strong>Simple passwords:</strong> Passwords like  <em>123456</em>, <em>password123</em> , or repeated characters are easy for attackers to guess.",
-                    "❌ <strong>Personal informations:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
+                    "❌ <strong>Personal information:</strong> Names, birthdays, pet names, or other details about you can make passwords easier to guess.",
                     "❌ <strong>Predictable substitutions:</strong> Small changes such as adding <em>123</em> or replacing letters with symbols may still follow predictable patterns."
                 ],
     
@@ -159,7 +159,7 @@ const informationPanelContent = {
                 secondTopicTitle: "What Makes a Password Strong?",
     
                 secondTopicPoints: [
-                    "✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess.",
+                    "✨ <strong>Make it long:</strong> Longer passwords are generally harder for attackers to guess (at least 12–16 characters).",
                     "✨ <strong>Make it unpredictable:</strong> Use unrelated words or ideas that attackers would not easily expect.",
                     "✨ <strong>No personal information:</strong> Do not build passwords from information that someone could discover about you."
                 ],
@@ -180,7 +180,7 @@ const informationPanelContent = {
     
                 firstTopicPoints: [
                     "⚠️ <strong>Do not reuse passwords:</strong>  Using the same password for several accounts means one stolen password could put multiple accounts at risk.",
-                    "⚠️ <strong>A data breach can expose passwords:</strong> A password's strength doesn't matter if attackers obtain your password from one account, they may try it on your other accounts.",
+                    "⚠️ <strong>A stolen password can put several accounts at risk:</strong> Even a strong password cannot protect you if it is stolen and used for several accounts. Attackers may try the stolen password on your other accounts.",
                     "✅ <strong>Use a different password for every account:</strong> A different password for every account keeps a single breach contained to that one account."
                 ],
     
@@ -222,7 +222,7 @@ const informationPanelContent = {
                 secondTopicTitle: "Was macht ein Passwort stark?",
 
                 secondTopicPoints: [
-                    "✨ <strong>Mach es lang:</strong> Längere Passwörter sind für Angreifer im Allgemeinen schwieriger zu erraten.",
+                    "✨ <strong>Mach es lang:</strong> Längere Passwörter sind für Angreifer im Allgemeinen schwieriger zu erraten (mindestens 12–16 Zeichen).",
                     "✨ <strong>Mach es unvorhersehbar:</strong> Verwende voneinander unabhängige Wörter oder Ideen, die Angreifer nicht leicht erwarten würden.",
                     "✨ <strong>Keine persönlichen Informationen:</strong> Verwende keine Informationen für dein Passwort, die andere über dich herausfinden könnten."
                 ],
@@ -241,7 +241,7 @@ const informationPanelContent = {
 
                 firstTopicPoints: [
                     "⚠️ <strong>Passwörter nicht wiederverwenden:</strong> Wenn dasselbe Passwort für mehrere Konten verwendet wird, kann ein gestohlenes Passwort mehrere Konten gefährden.",
-                    "⚠️ <strong>Ein Datenleck kann Passwörter offenlegen:</strong> Die Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch bei anderen Konten zu verwenden.",
+                    "⚠️ <strong> Ein gestohlenes Passwort kann mehrere Konten gefährden: </strong> Auch ein starkes Passwort schützt nicht, wenn es gestohlen und für mehrere Konten verwendet wird. Angreifer können das gestohlene Passwort bei anderen Konten ausprobieren.",
                     "✅ <strong>Für jedes Konto ein anderes Passwort verwenden:</strong> Ein individuelles Passwort für jedes Konto begrenzt das Risiko eines einzelnen Datenlecks auf dieses eine Konto."
                 ],
 
