@@ -111,7 +111,7 @@ const informationPanelContent = {
 
                 firstTopicPoints: [
                     "⚠️ <strong>Wichtige Passwörter niemals wiederverwenden:</strong> Wenn dasselbe Passwort für mehrere Konten verwendet wird, kann ein gestohlenes Passwort mehrere Konten gefährden.",
-                    "⚠️ <strong>Ein Datenleck kann ein Risiko für viele Konten darstellen: </strong> ie Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch für andere Konten zu verwenden.",
+                    "⚠️ <strong>Ein Datenleck kann ein Risiko für viele Konten darstellen: </strong> Die Stärke eines Passworts spielt keine Rolle mehr, wenn Angreifer es von einem Konto erhalten. Sie können versuchen, dasselbe Passwort auch für andere Konten zu verwenden.",
                     "✅ <strong>So kannst du das verhindern:</strong> Ein anderes Passwort für jedes Konto sorgt dafür, dass ein einzelner Angriff auf dieses eine Konto begrenzt bleibt."
                 ],
 
