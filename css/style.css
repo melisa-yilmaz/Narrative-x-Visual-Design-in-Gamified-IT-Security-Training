@@ -99,11 +99,10 @@
 
   .scene-image {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     display: block;
     background: var(--theme-image-bg);
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
   }
 
   .image-placeholder {
