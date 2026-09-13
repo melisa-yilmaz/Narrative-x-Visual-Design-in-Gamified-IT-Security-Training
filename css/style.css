@@ -137,9 +137,9 @@
 }
   .continue-btn, .back-btn {
     border: 1px solid var(--theme-accent-dim);
-    color: var(--theme-accent);
     font-family: var(--theme-font);
-    background: var(--theme-accent);
+    background: var(--theme-accent-dim);
+    color: var(--theme-bg);
     font-size: 14px;
     letter-spacing: 0.12em;
     padding: 12px 36px;
