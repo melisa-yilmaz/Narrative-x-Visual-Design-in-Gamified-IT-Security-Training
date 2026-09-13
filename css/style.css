@@ -139,7 +139,7 @@
     border: 1px solid var(--theme-accent-dim);
     color: var(--theme-accent);
     font-family: var(--theme-font);
-    background: transparent;
+    background: var(--theme-accent);
     font-size: 14px;
     letter-spacing: 0.12em;
     padding: 12px 36px;
