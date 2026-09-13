@@ -61,8 +61,8 @@
 
 
   body.real {
-    --theme-bg: #0b0d10;
-  --theme-text: #e6e8eb;
+    --theme-bg: #e6e8eb;
+  --theme-text:  #0b0d10;
   --theme-font: 'Inter', 'system-ui', -apple-system, 'Segoe UI', sans-serif;
 
   --theme-accent: #5b9cf6;
@@ -74,9 +74,9 @@
   --theme-rune-border: #5b9cf6;
 
   --theme-glow: rgba(91, 156, 246, 0.06);
-  --theme-panel-bg: #121417;
+  --theme-panel-bg: #e6e8eb;
   --theme-panel-border: rgba(255, 255, 255, 0.08);
-  --theme-card-bg: #16181c;
+  --theme-card-bg: #c9cbcf;
   --theme-image-bg: #16181c;
   --theme-image-gradient: linear-gradient(135deg, #16181c 0%, #1a1d22 50%, #14161a);
   }
@@ -136,7 +136,7 @@
     margin-top: 1rem;
 }
   .continue-btn, .back-btn {
-    border: 1px solid var(--theme-accent-dim);
+    border: 1px solid var(--theme-accent);
     font-family: var(--theme-font);
     background: var(--theme-accent-dim);
     color: var(--theme-bg);
@@ -149,8 +149,8 @@
   }
 
   .continue-btn:hover, .back-btn:hover {
-    background: var(--theme-accent-dim);
-    color: var(--theme-bg);
+    background: var(--theme-bg);
+    color: var(--theme-accent-dim);
   }
 
   .progress {
